@@ -1,0 +1,82 @@
+config:
+  ontologies:
+    ROR:
+      name: "Research Organization Registry (ROR)"
+      version: "1.41"
+      DOI: https://doi.org/10.5281/zenodo.10652491
+      URL: https://zenodo.org/records/10652491/files/v1.41-2024-02-13-ror-data.zip
+      license: https://creativecommons.org/publicdomain/zero/1.0/
+      format: 
+        zipped: True
+        file_suffix: "csv"
+      enum:
+        coll_by_enum:
+          term_to_replace: "#<collected by enum>\n"
+          filtering_column: "country.country_code"
+          filtering_term: "DE"
+          terms_to_include: ["name", "id"]
+    DOID:
+      name: "Human Disease Ontology"
+      version: "2024-01-31"
+      DOI: https://doi.org/10.1093/nar/gkab1063
+      URL: http://purl.obolibrary.org/obo/doid/releases/2024-01-31/doid.owl
+      license: https://creativecommons.org/publicdomain/zero/1.0/
+      format: 
+        zipped: False
+        file_suffix: "owl"
+      enum:
+        disorder_enum:
+          term_to_replace: "#<disorder enum>\n"
+          descending_from: "http://purl.obolibrary.org/obo/DOID_4"
+    OBI:
+      name: "Ontology for Biomedical Investigations"
+      version: "2024-01-09"
+      DOI: https://doi.org/10.1371/journal.pone.0154556
+      URL: http://purl.obolibrary.org/obo/obi/2024-01-09/obi.owl
+      license: Ontology for Biomedical Investigations
+      format: 
+        zipped: False
+        file_suffix: "owl"
+      enum:
+        sample_material_enum:
+          term_to_replace: "#<sample material enum obi>\n"
+          descending_from: "http://purl.obolibrary.org/obo/OBI_0100051"
+    ENVO:
+      name: "The Environment Ontology"
+      version: "2024-02-05"
+      DOI: https://doi.org/10.1186/2041-1480-4-43
+      URL: http://purl.obolibrary.org/obo/envo/releases/2024-02-05/envo.owl
+      license: https://creativecommons.org/publicdomain/zero/1.0/
+      format: 
+        zipped: False
+        file_suffix: "owl"
+      enum:
+        sample_material_enum:
+          term_to_replace: "#<sample material enum envo>\n"
+          descending_from: "http://purl.obolibrary.org/obo/ENVO_00010483"
+        sample_site_enum:
+          term_to_replace: "#<sample site enum envo>\n"
+          descending_from: "http://purl.obolibrary.org/obo/ENVO_00000428"
+    UBERON:
+      name: "Uber-anatomy ontology"
+      version: "2024-02-20"
+      DOI: https://doi.org/10.1186%2Fgb-2012-13-1-r5
+      URL: http://purl.obolibrary.org/obo/uberon/releases/2024-02-20/uberon.owl
+      license: http://creativecommons.org/licenses/by/3.0/
+      format: 
+        zipped: False
+        file_suffix: "owl"
+      enum:
+        sample_site_enum:
+          term_to_replace: "#<sample site enum uberon>\n"
+          descending_from: "http://purl.obolibrary.org/obo/UBERON_0001062"
+  environment:
+    path_for_ontologies: "ontologies"
+    path_for_schemes: "schemes"
+    path_for_final_schemes: "final"
+    name_of_schemes_file: "metaDZIF.yaml"
+    path_for_DataHarmonizer: "DataHarmonizer"
+  prefixes_controlled_vocabularies:
+    term_to_replace: "#<prefixes controlled vocabularies>\n"
+  DataHarmonizerBuild:
+    url_of_DataHarmonizer: https://github.com/jannikseidelQBiC/DZIFDataHarmonizer/archive/refs/heads/DZIFDataHarmonizer.zip
