@@ -2141,16 +2141,16 @@ classes:
         slot_group: Comment
 
   Microbial-Proteomic-Raw-Data-isolated-from-Non-human-Host:
-    #is_a: dh_interface
     # TODO: Everything - Environmental and biological Metadata finished
 
   Microbial-Proteomic-Raw-Data-isolated-from-Human-Host:
+    # TODO
 
   Microbial-Metabolomic-Raw-Data-isolated-from-Non-human-Host:
-    #is_a: dh_interface
-    # TODO: Everything
+    # TODO
 
   Microbial-Metabolomic-Raw-Data-isolated-from-Human-Host:
+    # TODO
 
 slots:
   age:
