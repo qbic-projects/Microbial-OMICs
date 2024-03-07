@@ -13,7 +13,6 @@ prefixes:
   SIO: http://semanticscience.org/resource/SIO_
   NCIT: http://purl.obolibrary.org/obo/NCIT_
   PATO: http://purl.obolibrary.org/obo/PATO_
-  EDAM: http://edamontology.org/data_
   XCO: http://purl.obolibrary.org/obo/XCO_
   SO: http://purl.obolibrary.org/obo/SO_
   ARO: http://purl.obolibrary.org/obo/ARO_
@@ -42,9 +41,12 @@ classes:
       - lib_selection
       - nuc_acid_extr_meth
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -92,62 +94,71 @@ classes:
       checksum:
         rank: 10
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 11
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 12
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 13
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 14
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 15
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 16
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 17
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 18
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 19
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 20
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 21
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 22
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 23
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 24
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 25
         slot_group: Biological Metadata
-      zbr:
+      mat_conditions:
         rank: 26
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 27
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 28
+        slot_group: Biological Metadata
+      zbr:
+        rank: 29
         slot_group: Link
       run_ref:
-        rank: 27
+        rank: 30
         slot_group: Link
       biosample:
-        rank: 28
+        rank: 31
         slot_group: Link
       comment:
-        rank: 29
+        rank: 32
         slot_group: Comment
 
   Microbial-Genomic-Raw-Data-isolated-from-Non-human-Host:
@@ -163,9 +174,12 @@ classes:
       - lib_selection
       - nuc_acid_extr_meth
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -179,7 +193,7 @@ classes:
       - microbial_id
       - chemical_exposure
       - host_name
-      - host_height
+      - host_length
       - host_weight
       - host_spec_sample_depth
       - age
@@ -222,89 +236,98 @@ classes:
       checksum:
         rank: 10
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 11
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 12
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 13
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 14
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 15
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 16
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 17
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 18
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 19
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 20
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 21
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 22
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 23
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 24
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 25
         slot_group: Biological Metadata
-      host_name:
+      mat_conditions:
         rank: 26
-        slot_group: Host Metadata
-      host_height:
+        slot_group: Biological Metadata
+      microbial_id:
         rank: 27
-        slot_group: Host Metadata
-      host_weight:
+        slot_group: Biological Metadata
+      chemical_exposure:
         rank: 28
-        slot_group: Host Metadata
-      host_spec_sample_depth:
+        slot_group: Biological Metadata
+      host_name:
         rank: 29
         slot_group: Host Metadata
-      age:
+      host_length:
         rank: 30
         slot_group: Host Metadata
-      sex:
+      host_weight:
         rank: 31
         slot_group: Host Metadata
-      host_diet:
+      host_spec_sample_depth:
         rank: 32
         slot_group: Host Metadata
-      habitat:
+      age:
         rank: 33
         slot_group: Host Metadata
-      disorders:
+      sex:
         rank: 34
         slot_group: Host Metadata
-      zbr:
+      host_diet:
         rank: 35
+        slot_group: Host Metadata
+      habitat:
+        rank: 36
+        slot_group: Host Metadata
+      disorders:
+        rank: 37
+        slot_group: Host Metadata
+      zbr:
+        rank: 38
         slot_group: Link
       run_ref:
-        rank: 36
+        rank: 39
         slot_group: Link
       biosample:
-        rank: 37
+        rank: 40
         slot_group: Link
       comment:
-        rank: 38
+        rank: 41
         slot_group: Comment
 
   Microbial-Genomic-Raw-Data-isolated-from-Human-Host:
@@ -455,9 +478,12 @@ classes:
       - number_contig
       - n50
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -498,59 +524,68 @@ classes:
       checksum:
         rank: 8
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 9
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 10
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 11
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 12
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 13
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 14
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 15
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 16
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 17
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 18
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 19
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 20
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 21
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 22
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 23
         slot_group: Biological Metadata
-      zbr:
+      mat_conditions:
         rank: 24
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 25
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 26
+        slot_group: Biological Metadata
+      zbr:
+        rank: 27
         slot_group: Link
       biosample:
-        rank: 25
+        rank: 28
         slot_group: Link
       comment:
-        rank: 26
+        rank: 29
         slot_group: Comment
 
   Microbial-Genomic-Assemblies-isolated-from-Non-human-Host:
@@ -564,9 +599,12 @@ classes:
       - number_contig
       - n50
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -580,7 +618,7 @@ classes:
       - microbial_id
       - chemical_exposure
       - host_name
-      - host_height
+      - host_length
       - host_weight
       - host_spec_sample_depth
       - age
@@ -616,86 +654,95 @@ classes:
       checksum:
         rank: 8
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 9
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 10
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 11
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 12
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 13
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 14
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 15
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 16
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 17
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 18
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 19
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 20
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 21
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 22
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 23
         slot_group: Biological Metadata
-      host_name:
+      mat_conditions:
         rank: 24
-        slot_group: Host Metadata
-      host_height:
+        slot_group: Biological Metadata
+      microbial_id:
         rank: 25
-        slot_group: Host Metadata
-      host_weight:
+        slot_group: Biological Metadata
+      chemical_exposure:
         rank: 26
-        slot_group: Host Metadata
-      host_spec_sample_depth:
+        slot_group: Biological Metadata
+      host_name:
         rank: 27
         slot_group: Host Metadata
-      age:
+      host_length:
         rank: 28
         slot_group: Host Metadata
-      sex:
+      host_weight:
         rank: 29
         slot_group: Host Metadata
-      host_diet:
+      host_spec_sample_depth:
         rank: 30
         slot_group: Host Metadata
-      habitat:
+      age:
         rank: 31
         slot_group: Host Metadata
-      disorders:
+      sex:
         rank: 32
         slot_group: Host Metadata
-      zbr:
+      host_diet:
         rank: 33
+        slot_group: Host Metadata
+      habitat:
+        rank: 34
+        slot_group: Host Metadata
+      disorders:
+        rank: 35
+        slot_group: Host Metadata
+      zbr:
+        rank: 36
         slot_group: Link
       biosample:
-        rank: 34
+        rank: 37
         slot_group: Link
       comment:
-        rank: 35
+        rank: 38
         slot_group: Comment
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Environment:
@@ -710,9 +757,12 @@ classes:
       - lib_selection
       - nuc_acid_extr_meth
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -760,62 +810,71 @@ classes:
       checksum:
         rank: 10
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 11
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 12
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 13
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 14
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 15
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 16
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 17
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 18
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 19
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 20
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 21
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 22
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 23
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 24
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 25
         slot_group: Biological Metadata
-      zbr:
+      mat_conditions:
         rank: 26
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 27
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 28
+        slot_group: Biological Metadata
+      zbr:
+        rank: 29
         slot_group: Link
       run_ref:
-        rank: 27
+        rank: 30
         slot_group: Link
       biosample:
-        rank: 28
+        rank: 31
         slot_group: Link
       comment:
-        rank: 29
+        rank: 32
         slot_group: Comment
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Non-human-Host:
@@ -830,9 +889,12 @@ classes:
       - lib_selection
       - nuc_acid_extr_meth
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -846,7 +908,7 @@ classes:
       - microbial_id
       - chemical_exposure
       - host_name
-      - host_height
+      - host_length
       - host_weight
       - host_spec_sample_depth
       - age
@@ -889,89 +951,98 @@ classes:
       checksum:
         rank: 10
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 11
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 12
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 13
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 14
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 15
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 16
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 17
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 18
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 19
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 20
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 21
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 22
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 23
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 24
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 25
         slot_group: Biological Metadata
-      host_name:
+      mat_conditions:
         rank: 26
-        slot_group: Host Metadata
-      host_height:
+        slot_group: Biological Metadata
+      microbial_id:
         rank: 27
-        slot_group: Host Metadata
-      host_weight:
+        slot_group: Biological Metadata
+      chemical_exposure:
         rank: 28
-        slot_group: Host Metadata
-      host_spec_sample_depth:
+        slot_group: Biological Metadata
+      host_name:
         rank: 29
         slot_group: Host Metadata
-      age:
+      host_length:
         rank: 30
         slot_group: Host Metadata
-      sex:
+      host_weight:
         rank: 31
         slot_group: Host Metadata
-      host_diet:
+      host_spec_sample_depth:
         rank: 32
         slot_group: Host Metadata
-      habitat:
+      age:
         rank: 33
         slot_group: Host Metadata
-      disorders:
+      sex:
         rank: 34
         slot_group: Host Metadata
-      zbr:
+      host_diet:
         rank: 35
+        slot_group: Host Metadata
+      habitat:
+        rank: 36
+        slot_group: Host Metadata
+      disorders:
+        rank: 37
+        slot_group: Host Metadata
+      zbr:
+        rank: 38
         slot_group: Link
       run_ref:
-        rank: 36
+        rank: 39
         slot_group: Link
       biosample:
-        rank: 37
+        rank: 40
         slot_group: Link
       comment:
-        rank: 38
+        rank: 41
         slot_group: Comment
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Human-Host:
@@ -1128,9 +1199,12 @@ classes:
       - target_gene
       - pcr_primers
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -1181,62 +1255,71 @@ classes:
       checksum:
         rank: 12
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 13
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 14
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 15
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 16
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 17
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 18
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 19
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 20
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 21
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 22
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 23
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 24
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 25
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 26
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 27
         slot_group: Biological Metadata
-      zbr:
+      mat_conditions:
         rank: 28
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 29
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 30
+        slot_group: Biological Metadata
+      zbr:
+        rank: 31
         slot_group: Link
       run_ref:
-        rank: 29
+        rank: 32
         slot_group: Link
       biosample:
-        rank: 30
+        rank: 33
         slot_group: Link
       comment:
-        rank: 31
+        rank: 34
         slot_group: Comment
 
   Microbial-Amplicon-Raw-Data-isolated-from-Non-human-Host:
@@ -1253,9 +1336,12 @@ classes:
       - target_gene
       - pcr_primers
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -1269,7 +1355,7 @@ classes:
       - microbial_id
       - chemical_exposure
       - host_name
-      - host_height
+      - host_length
       - host_weight
       - host_spec_sample_depth
       - age
@@ -1315,89 +1401,98 @@ classes:
       checksum:
         rank: 12
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 13
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 14
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 15
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 16
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 17
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 18
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 19
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 20
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 21
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 22
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 23
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 24
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 25
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 26
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 27
         slot_group: Biological Metadata
-      host_name:
+      mat_conditions:
         rank: 28
-        slot_group: Host Metadata
-      host_height:
+        slot_group: Biological Metadata
+      microbial_id:
         rank: 29
-        slot_group: Host Metadata
-      host_weight:
+        slot_group: Biological Metadata
+      chemical_exposure:
         rank: 30
-        slot_group: Host Metadata
-      host_spec_sample_depth:
+        slot_group: Biological Metadata
+      host_name:
         rank: 31
         slot_group: Host Metadata
-      age:
+      host_length:
         rank: 32
         slot_group: Host Metadata
-      sex:
+      host_weight:
         rank: 33
         slot_group: Host Metadata
-      host_diet:
+      host_spec_sample_depth:
         rank: 34
         slot_group: Host Metadata
-      habitat:
+      age:
         rank: 35
         slot_group: Host Metadata
-      disorders:
+      sex:
         rank: 36
         slot_group: Host Metadata
-      zbr:
+      host_diet:
         rank: 37
+        slot_group: Host Metadata
+      habitat:
+        rank: 38
+        slot_group: Host Metadata
+      disorders:
+        rank: 39
+        slot_group: Host Metadata
+      zbr:
+        rank: 40
         slot_group: Link
       run_ref:
-        rank: 38
+        rank: 41
         slot_group: Link
       biosample:
-        rank: 39
+        rank: 42
         slot_group: Link
       comment:
-        rank: 40
+        rank: 43
         slot_group: Comment
 
   Microbial-Amplicon-Raw-Data-isolated-from-Human-Host:
@@ -1558,9 +1653,12 @@ classes:
       - nuc_acid_extr_meth
       - rrna_treatment
       - checksum
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -1574,7 +1672,7 @@ classes:
       - microbial_id
       - chemical_exposure
       - host_name
-      - host_height
+      - host_length
       - host_weight
       - host_spec_sample_depth
       - age
@@ -1617,89 +1715,98 @@ classes:
       checksum:
         rank: 10
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 11
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 12
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 13
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 14
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 15
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 16
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 17
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 18
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 19
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 20
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 21
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 22
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 23
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 24
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 25
         slot_group: Biological Metadata
-      host_name:
+      mat_conditions:
         rank: 26
-        slot_group: Host Metadata
-      host_height:
+        slot_group: Biological Metadata
+      microbial_id:
         rank: 27
-        slot_group: Host Metadata
-      host_weight:
+        slot_group: Biological Metadata
+      chemical_exposure:
         rank: 28
-        slot_group: Host Metadata
-      host_spec_sample_depth:
+        slot_group: Biological Metadata
+      host_name:
         rank: 29
         slot_group: Host Metadata
-      age:
+      host_length:
         rank: 30
         slot_group: Host Metadata
-      sex:
+      host_weight:
         rank: 31
         slot_group: Host Metadata
-      host_diet:
+      host_spec_sample_depth:
         rank: 32
         slot_group: Host Metadata
-      habitat:
+      age:
         rank: 33
         slot_group: Host Metadata
-      disorders:
+      sex:
         rank: 34
         slot_group: Host Metadata
-      zbr:
+      host_diet:
         rank: 35
+        slot_group: Host Metadata
+      habitat:
+        rank: 36
+        slot_group: Host Metadata
+      disorders:
+        rank: 37
+        slot_group: Host Metadata
+      zbr:
+        rank: 38
         slot_group: Link
       run_ref:
-        rank: 36
+        rank: 39
         slot_group: Link
       biosample:
-        rank: 37
+        rank: 40
         slot_group: Link
       comment:
-        rank: 38
+        rank: 41
         slot_group: Comment
     
   Microbial-Transcriptomic-Raw-Data-isolated-from-Human-Host:
@@ -1855,9 +1962,12 @@ classes:
       - lib_selection
       - nuc_acid_extr_meth
       - rrna_treatment
-      - coll_date_time
+      - coll_date
+      - coll_time
       - coll_by
-      - geo_loc
+      - country
+      - state
+      - city
       - latitude
       - longitude
       - elevation
@@ -1871,7 +1981,7 @@ classes:
       - microbial_id
       - chemical_exposure
       - host_name
-      - host_height
+      - host_length
       - host_weight
       - host_spec_sample_depth
       - age
@@ -1914,89 +2024,98 @@ classes:
       checksum:
         rank: 10
         slot_group: Technical Metadata
-      coll_date_time:
+      coll_date:
         rank: 11
         slot_group: Environmental Metadata
-      coll_by:
+      coll_time:
         rank: 12
         slot_group: Environmental Metadata
-      geo_loc:
+      coll_by:
         rank: 13
         slot_group: Environmental Metadata
-      latitude:
+      country:
         rank: 14
         slot_group: Environmental Metadata
-      longitude:
+      state:
         rank: 15
         slot_group: Environmental Metadata
-      elevation:
+      city:
         rank: 16
         slot_group: Environmental Metadata
-      altitude_geo_depth:
+      latitude:
         rank: 17
         slot_group: Environmental Metadata
-      sample_site_feat:
+      longitude:
         rank: 18
-        slot_group: Biological Metadata
-      sample_sub_site_feat:
+        slot_group: Environmental Metadata
+      elevation:
         rank: 19
-        slot_group: Biological Metadata
-      sample_material:
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
         rank: 20
-        slot_group: Biological Metadata
-      sample_size_mass:
+        slot_group: Environmental Metadata
+      sample_site_feat:
         rank: 21
         slot_group: Biological Metadata
-      site_conditions:
+      sample_sub_site_feat:
         rank: 22
         slot_group: Biological Metadata
-      mat_conditions:
+      sample_material:
         rank: 23
         slot_group: Biological Metadata
-      microbial_id:
+      sample_size_mass:
         rank: 24
         slot_group: Biological Metadata
-      chemical_exposure:
+      site_conditions:
         rank: 25
         slot_group: Biological Metadata
-      host_name:
+      mat_conditions:
         rank: 26
-        slot_group: Host Metadata
-      host_height:
+        slot_group: Biological Metadata
+      microbial_id:
         rank: 27
-        slot_group: Host Metadata
-      host_weight:
+        slot_group: Biological Metadata
+      chemical_exposure:
         rank: 28
-        slot_group: Host Metadata
-      host_spec_sample_depth:
+        slot_group: Biological Metadata
+      host_name:
         rank: 29
         slot_group: Host Metadata
-      age:
+      host_length:
         rank: 30
         slot_group: Host Metadata
-      sex:
+      host_weight:
         rank: 31
         slot_group: Host Metadata
-      host_diet:
+      host_spec_sample_depth:
         rank: 32
         slot_group: Host Metadata
-      habitat:
+      age:
         rank: 33
         slot_group: Host Metadata
-      disorders:
+      sex:
         rank: 34
         slot_group: Host Metadata
-      zbr:
+      host_diet:
         rank: 35
+        slot_group: Host Metadata
+      habitat:
+        rank: 36
+        slot_group: Host Metadata
+      disorders:
+        rank: 37
+        slot_group: Host Metadata
+      zbr:
+        rank: 38
         slot_group: Link
       run_ref:
-        rank: 36
+        rank: 39
         slot_group: Link
       biosample:
-        rank: 37
+        rank: 40
         slot_group: Link
       comment:
-        rank: 38
+        rank: 41
         slot_group: Comment
 
   Microbial-Metatranscriptomic-Raw-Data-isolated-from-Human-Host:
@@ -2174,13 +2293,13 @@ slots:
     range: WhitespaceMinimizedString
       
   altitude_geo_depth:
-    title: Altitude or geographic Depth
+    title: Altitude or geographic depth
     description: >-
       Altitude is a distance above sea level.
-      Geographic Depth is a distance below sea level.
+      Geographic depth is a distance below sea level.
     comments: In meters. Can have up to 3 places after the point.
     pattern: "(^[+/-]?[0-9]{1,4}|^[+/-]?[0-9]{1,3}[.][0-9]{1,3}$|^[+/-]?[0-9][0-9]{1,3}[.][0-9]{1,3}$)"
-    required: true
+    recommended: true
     examples:
       - value: 123.456
       - value: -1401
@@ -2272,7 +2391,7 @@ slots:
       A city is a relatively large and permanent settlement.
     comments:
       Use the closest nearby city or geographic location where the sample was collected.
-    required: true
+    recommended: true
     examples:
       - value: Tuebingen
       - value: Munich
@@ -2308,31 +2427,8 @@ slots:
 # Version: 23.09d
     range: WhitespaceMinimizedString
 
-
-  coll_date_time:
-    title: Collection Date and Time
-    description: >-
-      The date or date and time of the specimen or data collection.
-    comments: "First insert the date, then separated by a space the time 
-      (does not have to be precisely the minute but should be in the range of half an hour, 
-      seconds are just collected to be compatible with the MIxS-standard). 
-      Use the following format: YYYY-MM-DD hh:mm:ss±hh:mm
-      ±hh:mm stands for time zone (UTC±hours:minutes)
-      If not collected use 'not collected', if not provided use 'not provided'."
-    pattern: "^([\\+-]?\\d{4}(?!\\d{2}\\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$|(^not collected$)|(^not provided$)"
-    required: true
-    examples:
-      - value: not collected
-      - value: not provided
-      - value: "2023-04-28 10:56:00+02"
-    exact_mappings:
-      - NCIT:C82515
-# Version: 23.09d
-    range: WhitespaceMinimizedString
-
-
   coll_time:
-    title: Collection Time
+    title: Collection time
     description: >-
       The hour, minute, and/or second at which the sample or data was collected.
     comments:
@@ -2369,7 +2465,8 @@ slots:
     description: >-
       A country is a region legally identified as a distinct entity in political geography. 
     comments:
-      So far, only european countries are supported for validation. Other countries can be added on demand.
+      Insert the country the sample was collected in.
+      So far, only european countries are supported for validation. Other countries can be added on demand (reach out to jannik.seidel@qbic.uni-tuebingen.de).
     range: country enum
     required: true
     examples:
@@ -2399,7 +2496,7 @@ slots:
     range: WhitespaceMinimizedString
 
   culture_substrate:
-    title: Culture Substrate
+    title: Culture substrate
     description: >-
       A mixture of chemicals used by the microorganism to feed on.
     comments: "Use 'not applicable' if not from a microbial isolate."
@@ -2432,7 +2529,7 @@ slots:
       A positional quality inhering in a bearer by virtue of the bearer's vertical distance of a point
       above or below a reference surface.
     comments: Can have negative values if the sample was taken below reference surface. Reference surface can be ground surface, water surface, river bed surface, etc.
-    required: true
+    recommended: true
     examples:
       - value: 10 m
       - value: -10 m
@@ -2446,7 +2543,6 @@ slots:
 
   ethnicity:
     title: Ethnicity
-    # TODO: Define values which can be chosen
     description: >-
       Ethnicity is the biological quality of membership in a social group based on a common heritage.
     comments: Can have several values if host has ancestors from different ethnicities.
@@ -2459,21 +2555,6 @@ slots:
     exact_mappings:
       - SIO:001014
 # Version: 1.59
-    
-  geo_loc:
-    title: Geographic Location
-    description: >-
-      A report about localisation of the isolaton of biological material e.g. country or coordinates.
-    comments: "Please use the countries from this site: https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/ (accessed on 04/07/2023) and the INSDC value - format: <country>:<region>, <locality>"
-    required: true
-    pattern: (^Afghanistan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Albania:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Algeria:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^American Samoa:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Andorra:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Angola:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Anguilla:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Antarctica:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Antigua and Barbuda:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Arctic Ocean:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Argentina:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Armenia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Aruba:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Ashmore and Cartier Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Atlantic Ocean:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Australia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Austria:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Azerbaijan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bahamas:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bahrain:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Baltic Sea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Baker Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bangladesh:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Barbados:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bassas da India:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Belarus:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Belgium:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Belize:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Benin:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bermuda:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bhutan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bolivia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Borneo:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bosnia and Herzegovina:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Botswana:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bouvet Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Brazil:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^British Virgin Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Brunei:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Bulgaria:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Burkina Faso:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Burundi:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cambodia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cameroon:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Canada:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cape Verde:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cayman Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Central African Republic:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Chad:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Chile:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^China:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Christmas Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Clipperton Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cocos Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Colombia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Comoros:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cook Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Coral Sea Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Costa Rica:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cote d’Ivoire:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Croatia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cuba:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Curacao:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Cyprus:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Czech Republic:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Democratic Republic of the Congo:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Denmark:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Djibouti:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Dominica:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Dominican Republic:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Ecuador:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Egypt:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^El Salvador:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Equatorial Guinea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Eritrea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Estonia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Eswatini:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Ethiopia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Europa Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Falkland Islands (Islas Malvinas):[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Faroe Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Fiji:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Finland:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^France:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^French Guiana:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^French Polynesia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^French Southern and Antarctic Lands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Gabon:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Gambia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Gaza Strip:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Georgia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Germany:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Ghana:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Gibraltar:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Glorioso Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Greece:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Greenland:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Grenada:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Guadeloupe:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Guam:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Guatemala:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Guernsey:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Guinea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Guinea-Bissau:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Guyana:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Haiti:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Heard Island and McDonald Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Honduras:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Hong Kong:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Howland Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Hungary:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Iceland:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^India:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Indian Ocean:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Indonesia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Iran:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Iraq:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Ireland:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Isle of Man:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Israel:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Italy:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Jamaica:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Jan Mayen:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Japan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Jarvis Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Jersey:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Johnston Atoll:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Jordan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Juan de Nova Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kazakhstan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kenya:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kerguelen Archipelago:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kingman Reef:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kiribati:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kosovo:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kuwait:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Kyrgyzstan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Laos:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Latvia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Lebanon:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Lesotho:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Liberia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Libya:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Liechtenstein:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Line Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Lithuania:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Luxembourg:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Macau:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Madagascar:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Malawi:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Malaysia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Maldives:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mali:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Malta:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Marshall Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Martinique:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mauritania:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mauritius:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mayotte:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mediterranean Sea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mexico:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Micronesia, Federated States of:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Midway Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Moldova:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Monaco:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mongolia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Montenegro:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Montserrat:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Morocco:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Mozambique:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Myanmar:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Namibia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Nauru:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Navassa Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Nepal:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Netherlands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^New Caledonia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^New Zealand:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Nicaragua:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Niger:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Nigeria:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Niue:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Norfolk Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^North Korea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^North Macedonia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^North Sea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Northern Mariana Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Norway:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Oman:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Pacific Ocean:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Pakistan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Palau:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Palmyra Atoll:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Panama:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Papua New Guinea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Paracel Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Paraguay:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Peru:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Philippines:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Pitcairn Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Poland:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Portugal:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Puerto Rico:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Qatar:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Republic of the Congo:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Reunion:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Romania:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Ross Sea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Russia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Rwanda:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saint Barthelemy:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saint Helena:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saint Kitts and Nevis:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saint Lucia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saint Martin:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saint Pierre and Miquelon:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saint Vincent and the Grenadines:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Samoa:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^San Marino:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Sao Tome and Principe:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Saudi Arabia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Senegal:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Serbia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Seychelles:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Sierra Leone:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Singapore:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Sint Maarten:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Slovakia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Slovenia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Solomon Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Somalia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^South Africa:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^South Georgia and the South Sandwich Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^South Korea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^South Sudan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Southern Ocean:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Spain:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Spratly Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Sri Lanka:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^State of Palestine:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Sudan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Suriname:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Svalbard:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Sweden:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Switzerland:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Syria:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Taiwan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tajikistan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tanzania:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tasman Sea:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Thailand:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Timor-Leste:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Togo:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tokelau:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tonga:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Trinidad and Tobago:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tromelin Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tunisia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Turkey:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Turkmenistan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Turks and Caicos Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Tuvalu:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^USA:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Uganda:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Ukraine:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^United Arab Emirates:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^United Kingdom:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Uruguay:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Uzbekistan:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Vanuatu:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Venezuela:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Viet Nam:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Virgin Islands:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Wake Island:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Wallis and Futuna:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^West Bank:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Western Sahara:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Yemen:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Zambia:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$|^Zimbabwe:[A-Z]\D{1,}[^ ], [A-ZÄÖÜ]\D{0,}$)
-    examples:
-      - value: "Germany:Baden-Württemberg, Tuebingen"
-      - value: "France:Provence-Alpes-Côte d’Azur, Marseille"
-    exact_mappings:
-      - EDAM:3720
-#  Version: 1.25
-    range: WhitespaceMinimizedString
 
   ghga:
     title: GHGA
@@ -2502,7 +2583,6 @@ slots:
 
   host_diet:
     title: Host diet
-    # TODO: has to be described better
     description: >-
       The food and drink consumed by an organism day to day. 
     comments: "Can be 'not applicable' if sample was not collected from a host."
@@ -2528,7 +2608,23 @@ slots:
       - NCIT:C25347
 # Version: 22.07d
     range: WhitespaceMinimizedString
-        
+
+  host_length:
+    title: Host length
+    description: >-
+      The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.
+    comments: "Length of host. Either 'not applicable' or to be filled with a value in cm."
+    required: true
+    pattern: (^not applicable$|^[0-9]{1,4} cm$)
+    examples:
+      - value: not applicable
+      - value: 28 cm
+    exact_mappings:
+      - NCIT:C25334
+# Version: 23.09d
+    range: WhitespaceMinimizedString
+
+
   host_name:
     title: Host name
     description: >-
@@ -2781,7 +2877,6 @@ slots:
     
   rrna_treatment:
     title: rRNA treatment
-    # TODO: Describe better
     description: >-
       Describes if and how rRNA is removed from the library or the data.
     comments:
@@ -2913,6 +3008,7 @@ slots:
     description: >-
       A state is a set of governing and supportive institutions that have sovereignty over a definite territory and population.
     comments:
+      Insert the state the sample was collected in.
       Only german states are supported to be validated.
     range: state enum
     required: true
