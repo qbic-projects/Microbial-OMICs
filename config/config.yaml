@@ -79,4 +79,4 @@ config:
   prefixes_controlled_vocabularies:
     term_to_replace: "#<prefixes controlled vocabularies>\n"
   DataHarmonizerBuild:
-    url_of_DataHarmonizer: https://github.com/jannikseidelQBiC/DZIFDataHarmonizer/archive/refs/heads/DZIFDataHarmonizer.zip
+    url_of_DataHarmonizer: https://github.com/qbic-projects/DZIFDataHarmonizer/archive/refs/heads/DZIFDataHarmonizer.zip
