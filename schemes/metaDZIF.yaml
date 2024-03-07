@@ -32,7 +32,6 @@ classes:
     title: Environmental Genomic Raw Data
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -62,110 +61,108 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
-      analysis_to_be_performed:
-        rank: 2
-        slot_group: Technical Metadata
+
       sample_label:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 22
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       zbr:
-        rank: 29
+        rank: 4
         slot_group: Link
       run_ref:
-        rank: 30
+        rank: 4
         slot_group: Link
       biosample:
-        rank: 31
+        rank: 4
         slot_group: Link
+      QBiCCode:
+        rank: 5
+        slot_group: Accession
       comment:
-        rank: 32
+        rank: 6
         slot_group: Comment
 
   Microbial-Genomic-Raw-Data-isolated-from-Non-human-Host:
     title: Genomic raw data from a non-human host
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -204,136 +201,133 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
-      analysis_to_be_performed:
-        rank: 2
-        slot_group: Technical Metadata
       sample_label:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 22
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 29
+        rank: 4
         slot_group: Host Metadata
       host_length:
-        rank: 30
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 31
+        rank: 4
         slot_group: Host Metadata
       host_spec_sample_depth:
-        rank: 32
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 33
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 34
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 35
+        rank: 4
         slot_group: Host Metadata
       habitat:
-        rank: 36
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 37
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 38
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 39
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 40
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 41
+        rank: 7
         slot_group: Comment
 
   Microbial-Genomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -365,106 +359,107 @@ classes:
       - ghga
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 2
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 10
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 15
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 16
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 18
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 19
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 20
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 22
+        rank: 4
         slot_group: Host Metadata
       host_height:
-        rank: 23
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 24
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 25
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 26
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 27
+        rank: 4
         slot_group: Host Metadata
       phenotyp_amr:
-        rank: 28
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 29
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 30
+        rank: 5
         slot_group: Link
       ghga:
-        rank: 31
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 32
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 33
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 34
+        rank: 7
         slot_group: Comment
 
   Microbial-Genomic-Assemblies-isolated-from-Environment:
@@ -507,85 +502,85 @@ classes:
         rank: 2
         slot_group: Technical Metadata
       assembly_qual:
-        rank: 3
+        rank: 2
         slot_group: Technical Metadata
       assembly_software:
-        rank: 4
+        rank: 2
         slot_group: Technical Metadata
       coverage:
-        rank: 5
+        rank: 2
         slot_group: Technical Metadata
       number_contig:
-        rank: 6
+        rank: 2
         slot_group: Technical Metadata
       n50:
-        rank: 7
+        rank: 2
         slot_group: Technical Metadata
       checksum:
-        rank: 8
+        rank: 2
         slot_group: Technical Metadata
       coll_date:
-        rank: 9
+        rank: 3
         slot_group: Environmental Metadata
       coll_time:
-        rank: 10
+        rank: 3
         slot_group: Environmental Metadata
       coll_by:
-        rank: 11
+        rank: 3
         slot_group: Environmental Metadata
       country:
-        rank: 12
+        rank: 3
         slot_group: Environmental Metadata
       state:
-        rank: 13
+        rank: 3
         slot_group: Environmental Metadata
       city:
-        rank: 14
+        rank: 3
         slot_group: Environmental Metadata
       latitude:
-        rank: 15
+        rank: 3
         slot_group: Environmental Metadata
       longitude:
-        rank: 16
+        rank: 3
         slot_group: Environmental Metadata
       elevation:
-        rank: 17
+        rank: 3
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 18
+        rank: 3
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 19
+        rank: 4
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 20
+        rank: 4
         slot_group: Biological Metadata
       sample_material:
-        rank: 21
+        rank: 4
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 22
+        rank: 4
         slot_group: Biological Metadata
       site_conditions:
-        rank: 23
+        rank: 4
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 24
+        rank: 4
         slot_group: Biological Metadata
       microbial_id:
-        rank: 25
+        rank: 4
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 26
+        rank: 4
         slot_group: Biological Metadata
       zbr:
-        rank: 27
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 28
+        rank: 5
         slot_group: Link
       comment:
-        rank: 29
+        rank: 6
         slot_group: Comment
 
   Microbial-Genomic-Assemblies-isolated-from-Non-human-Host:
@@ -637,118 +632,117 @@ classes:
         rank: 2
         slot_group: Technical Metadata
       assembly_qual:
-        rank: 3
+        rank: 2
         slot_group: Technical Metadata
       assembly_software:
-        rank: 4
+        rank: 2
         slot_group: Technical Metadata
       coverage:
-        rank: 5
+        rank: 2
         slot_group: Technical Metadata
       number_contig:
-        rank: 6
+        rank: 2
         slot_group: Technical Metadata
       n50:
-        rank: 7
+        rank: 2
         slot_group: Technical Metadata
       checksum:
-        rank: 8
+        rank: 2
         slot_group: Technical Metadata
       coll_date:
-        rank: 9
+        rank: 3
         slot_group: Environmental Metadata
       coll_time:
-        rank: 10
+        rank: 3
         slot_group: Environmental Metadata
       coll_by:
-        rank: 11
+        rank: 3
         slot_group: Environmental Metadata
       country:
-        rank: 12
+        rank: 3
         slot_group: Environmental Metadata
       state:
-        rank: 13
+        rank: 3
         slot_group: Environmental Metadata
       city:
-        rank: 14
+        rank: 3
         slot_group: Environmental Metadata
       latitude:
-        rank: 15
+        rank: 3
         slot_group: Environmental Metadata
       longitude:
-        rank: 16
+        rank: 3
         slot_group: Environmental Metadata
       elevation:
-        rank: 17
+        rank: 3
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 18
+        rank: 3
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 19
+        rank: 4
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 20
+        rank: 4
         slot_group: Biological Metadata
       sample_material:
-        rank: 21
+        rank: 4
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 22
+        rank: 4
         slot_group: Biological Metadata
       site_conditions:
-        rank: 23
+        rank: 4
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 24
+        rank: 4
         slot_group: Biological Metadata
       microbial_id:
-        rank: 25
+        rank: 4
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 26
+        rank: 4
         slot_group: Biological Metadata
       host_name:
-        rank: 27
+        rank: 5
         slot_group: Host Metadata
       host_length:
-        rank: 28
+        rank: 5
         slot_group: Host Metadata
       host_weight:
-        rank: 29
+        rank: 5
         slot_group: Host Metadata
       host_spec_sample_depth:
-        rank: 30
+        rank: 5
         slot_group: Host Metadata
       age:
-        rank: 31
+        rank: 5
         slot_group: Host Metadata
       sex:
-        rank: 32
+        rank: 5
         slot_group: Host Metadata
       host_diet:
-        rank: 33
+        rank: 5
         slot_group: Host Metadata
       habitat:
-        rank: 34
+        rank: 5
         slot_group: Host Metadata
       disorders:
-        rank: 35
+        rank: 5
         slot_group: Host Metadata
       zbr:
-        rank: 36
+        rank: 6
         slot_group: Link
       biosample:
-        rank: 37
+        rank: 6
         slot_group: Link
       comment:
-        rank: 38
+        rank: 7
         slot_group: Comment
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Environment:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -778,109 +772,106 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
-      analysis_to_be_performed:
-        rank: 2
-        slot_group: Technical Metadata
       sample_label:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 22
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       zbr:
-        rank: 29
+        rank: 4
         slot_group: Link
       run_ref:
-        rank: 30
+        rank: 4
         slot_group: Link
       biosample:
-        rank: 31
+        rank: 4
         slot_group: Link
+      QBiCCode:
+        rank: 5
+        slot_group: Accession
       comment:
-        rank: 32
+        rank: 6
         slot_group: Comment
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -919,136 +910,133 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
-      analysis_to_be_performed:
-        rank: 2
-        slot_group: Technical Metadata
       sample_label:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 22
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 29
+        rank: 4
         slot_group: Host Metadata
       host_length:
-        rank: 30
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 31
+        rank: 4
         slot_group: Host Metadata
       host_spec_sample_depth:
-        rank: 32
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 33
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 34
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 35
+        rank: 4
         slot_group: Host Metadata
       habitat:
-        rank: 36
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 37
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 38
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 39
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 40
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 41
+        rank: 7
         slot_group: Comment
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -1080,115 +1068,112 @@ classes:
       - ghga
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
-      analysis_to_be_performed:
-        rank: 2
-        slot_group: Technical Metadata
       sample_label:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 16
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 17
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 18
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 19
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 20
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 22
+        rank: 4
         slot_group: Host Metadata
       host_height:
-        rank: 23
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 24
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 25
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 26
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 27
+        rank: 4
         slot_group: Host Metadata
       phenotyp_amr:
-        rank: 28
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 29
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 30
+        rank: 5
         slot_group: Link
       ghga:
-        rank: 31
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 32
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 33
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 34
+        rank: 7
         slot_group: Comment
 
   Microbial-Amplicon-Raw-Data-isolated-from-Environment:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -1220,112 +1205,112 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       target_gene:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       pcr_primers:
-        rank: 11
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 12
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 21
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 22
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 29
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 30
+        rank: 3
         slot_group: Biological Metadata
       zbr:
-        rank: 31
+        rank: 4
         slot_group: Link
       run_ref:
-        rank: 32
+        rank: 4
         slot_group: Link
       biosample:
-        rank: 33
+        rank: 4
         slot_group: Link
+      QBiCCode:
+        rank: 5
+        slot_group: Accession
       comment:
-        rank: 34
+        rank: 6
         slot_group: Comment
 
   Microbial-Amplicon-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -1366,139 +1351,139 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       target_gene:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       pcr_primers:
-        rank: 11
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 12
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 21
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 22
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 29
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 30
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 31
+        rank: 4
         slot_group: Host Metadata
       host_length:
-        rank: 32
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 33
+        rank: 4
         slot_group: Host Metadata
       host_spec_sample_depth:
-        rank: 34
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 35
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 36
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 37
+        rank: 4
         slot_group: Host Metadata
       habitat:
-        rank: 38
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 39
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 40
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 41
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 42
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 43
+        rank: 7
         slot_group: Comment
 
   Microbial-Amplicon-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -1532,118 +1517,118 @@ classes:
       - ghga
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 2
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       target_gene:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       pcr_primers:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 11
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 17
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 18
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 19
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 20
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 22
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 23
+        rank: 4
         slot_group: Host Metadata
       host_height:
-        rank: 24
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 25
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 26
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 27
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 28
+        rank: 4
         slot_group: Host Metadata
       phenotyp_amr:
-        rank: 29
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 30
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 31
+        rank: 5
         slot_group: Link
       ghga:
-        rank: 32
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 33
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 34
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 35
+        rank: 7
         slot_group: Comment
 
   Microbial-Transcriptomic-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -1683,136 +1668,136 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 2
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       rrna_treatment:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 22
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 29
+        rank: 4
         slot_group: Host Metadata
       host_length:
-        rank: 30
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 31
+        rank: 4
         slot_group: Host Metadata
       host_spec_sample_depth:
-        rank: 32
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 33
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 34
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 35
+        rank: 4
         slot_group: Host Metadata
       habitat:
-        rank: 36
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 37
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 38
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 39
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 40
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 41
+        rank: 7
         slot_group: Comment
     
   Microbial-Transcriptomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -1845,115 +1830,115 @@ classes:
       - ghga
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 2
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       rrna_treatment:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 16
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 17
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 18
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 19
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 20
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 21
+        rank: 4
         slot_group: Host Metadata
       host_height:
-        rank: 22
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 23
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 24
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 25
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 26
+        rank: 4
         slot_group: Host Metadata
       phenotyp_amr:
-        rank: 27
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 28
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 29
+        rank: 5
         slot_group: Link
       ghga:
-        rank: 30
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 31
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 32
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 33
+        rank: 7
         slot_group: Comment
 
   Microbial-Metatranscriptomic-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -1992,136 +1977,136 @@ classes:
       - zbr
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 2
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       rrna_treatment:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       city:
-        rank: 16
+        rank: 2
         slot_group: Environmental Metadata
       latitude:
-        rank: 17
+        rank: 2
         slot_group: Environmental Metadata
       longitude:
-        rank: 18
+        rank: 2
         slot_group: Environmental Metadata
       elevation:
-        rank: 19
+        rank: 2
         slot_group: Environmental Metadata
       altitude_geo_depth:
-        rank: 20
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       sample_sub_site_feat:
-        rank: 22
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 23
+        rank: 3
         slot_group: Biological Metadata
       sample_size_mass:
-        rank: 24
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 25
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 26
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 27
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 28
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 29
+        rank: 4
         slot_group: Host Metadata
       host_length:
-        rank: 30
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 31
+        rank: 4
         slot_group: Host Metadata
       host_spec_sample_depth:
-        rank: 32
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 33
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 34
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 35
+        rank: 4
         slot_group: Host Metadata
       habitat:
-        rank: 36
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 37
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 38
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 39
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 40
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 41
+        rank: 7
         slot_group: Comment
 
   Microbial-Metatranscriptomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
     slots:
-      - QBiCCode
       - sample_label
       - seq_meth
       - lib_layout
@@ -2154,109 +2139,110 @@ classes:
       - ghga
       - run_ref
       - biosample
+      - QBiCCode
       - comment
     slot_usage:
-      QBiCCode:
-        rank: 1
-        slot_group: Accession
       sample_label:
-        rank: 2
+        rank: 1
         slot_group: Technical Metadata
       seq_meth:
-        rank: 3
+        rank: 1
         slot_group: Technical Metadata
       lib_layout:
-        rank: 4
+        rank: 1
         slot_group: Technical Metadata
       lib_source:
-        rank: 5
+        rank: 1
         slot_group: Technical Metadata
       lib_strategy:
-        rank: 6
+        rank: 1
         slot_group: Technical Metadata
       lib_selection:
-        rank: 7
+        rank: 1
         slot_group: Technical Metadata
       nuc_acid_extr_meth:
-        rank: 8
+        rank: 1
         slot_group: Technical Metadata
       rrna_treatment:
-        rank: 9
+        rank: 1
         slot_group: Technical Metadata
       checksum:
-        rank: 10
+        rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 11
+        rank: 2
         slot_group: Environmental Metadata
       coll_time:
-        rank: 12
+        rank: 2
         slot_group: Environmental Metadata
       coll_by:
-        rank: 13
+        rank: 2
         slot_group: Environmental Metadata
       country:
-        rank: 14
+        rank: 2
         slot_group: Environmental Metadata
       state:
-        rank: 15
+        rank: 2
         slot_group: Environmental Metadata
       sample_site_feat:
-        rank: 16
+        rank: 3
         slot_group: Biological Metadata
       sample_material:
-        rank: 17
+        rank: 3
         slot_group: Biological Metadata
       site_conditions:
-        rank: 18
+        rank: 3
         slot_group: Biological Metadata
       mat_conditions:
-        rank: 19
+        rank: 3
         slot_group: Biological Metadata
       microbial_id:
-        rank: 20
+        rank: 3
         slot_group: Biological Metadata
       chemical_exposure:
-        rank: 21
+        rank: 3
         slot_group: Biological Metadata
       host_name:
-        rank: 21
+        rank: 4
         slot_group: Host Metadata
       host_height:
-        rank: 22
+        rank: 4
         slot_group: Host Metadata
       host_weight:
-        rank: 23
+        rank: 4
         slot_group: Host Metadata
       age:
-        rank: 24
+        rank: 4
         slot_group: Host Metadata
       sex:
-        rank: 25
+        rank: 4
         slot_group: Host Metadata
       host_diet:
-        rank: 26
+        rank: 4
         slot_group: Host Metadata
       phenotyp_amr:
-        rank: 27
+        rank: 4
         slot_group: Host Metadata
       disorders:
-        rank: 28
+        rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 29
+        rank: 5
         slot_group: Link
       ghga:
-        rank: 30
+        rank: 5
         slot_group: Link
       run_ref:
-        rank: 31
+        rank: 5
         slot_group: Link
       biosample:
-        rank: 32
+        rank: 5
         slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
       comment:
-        rank: 33
+        rank: 7
         slot_group: Comment
 
   Microbial-Proteomic-Raw-Data-isolated-from-Non-human-Host:
@@ -2600,7 +2586,7 @@ slots:
       the vertical dimension of extension.
     comments: "Height of host. Either 'not applicable' or to be filled with a value in cm."
     required: true
-    pattern: (^not applicable$|^[0-9]{1,4} cm$)
+    pattern: (^not applicable$|^not provided$|^[0-9]{1,4} cm$)
     examples:
       - value: not applicable
       - value: 28 cm
@@ -2615,7 +2601,7 @@ slots:
       The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.
     comments: "Length of host. Either 'not applicable' or to be filled with a value in cm."
     required: true
-    pattern: (^not applicable$|^[0-9]{1,4} cm$)
+    pattern: (^not applicable$|^not provided$|^[0-9]{1,4} cm$)
     examples:
       - value: not applicable
       - value: 28 cm
@@ -2662,12 +2648,12 @@ slots:
     comments: "Weight in kg. Provide with max. 3 places after the comma. Does not have to be that precise if
       not needed. Can be 'not applicable' if no host was present."
     required: true
-    pattern: "(^not applicable$|^[1-9][0-9]{0,3} kg$|^[1-9][0-9]{0,3}[.][0-9]{1,3} kg$|^[0-9][.][0-9]{1,3} kg$)"
+    pattern: "(^not applicable$|^not provided$|^[1-9][0-9]{0,3} kg$|^[1-9][0-9]{0,3}[.][0-9]{1,3} kg$|^[0-9][.][0-9]{1,3} kg$)"
     examples:
       - value: not applicable
       - value: 74 kg
     range: WhitespaceMinimizedString
-        
+
   latitude:
     title: Latitude
     description: >-
@@ -3489,6 +3475,9 @@ enums:
       not applicable:
         description: >-
           If sample did not originate from host and/or no antimicrobial agent was applied.
+      not provided:
+        description: >-
+          If the information about phenotypical antimicrobial resistance was not provided. 
 
   rrna treatment enum:
     description: >-
