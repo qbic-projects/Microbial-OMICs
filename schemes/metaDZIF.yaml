@@ -337,7 +337,6 @@ classes:
       - nuc_acid_extr_meth
       - checksum
       - coll_date
-      - coll_time
       - coll_by
       - country
       - state
@@ -387,9 +386,6 @@ classes:
         rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 2
-        slot_group: Environmental Metadata
-      coll_time:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
@@ -1046,7 +1042,6 @@ classes:
       - nuc_acid_extr_meth
       - checksum
       - coll_date
-      - coll_time
       - coll_by
       - country
       - state
@@ -1096,9 +1091,6 @@ classes:
         rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 2
-        slot_group: Environmental Metadata
-      coll_time:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
@@ -1495,7 +1487,6 @@ classes:
       - pcr_primers
       - checksum
       - coll_date
-      - coll_time
       - coll_by
       - country
       - state
@@ -1551,9 +1542,6 @@ classes:
         rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 2
-        slot_group: Environmental Metadata
-      coll_time:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
@@ -1808,7 +1796,6 @@ classes:
       - rrna_treatment
       - checksum
       - coll_date
-      - coll_time
       - coll_by
       - country
       - state
@@ -1861,9 +1848,6 @@ classes:
         rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 2
-        slot_group: Environmental Metadata
-      coll_time:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
@@ -2117,7 +2101,6 @@ classes:
       - rrna_treatment
       - checksum
       - coll_date
-      - coll_time
       - coll_by
       - country
       - state
@@ -2170,9 +2153,6 @@ classes:
         rank: 1
         slot_group: Technical Metadata
       coll_date:
-        rank: 2
-        slot_group: Environmental Metadata
-      coll_time:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
