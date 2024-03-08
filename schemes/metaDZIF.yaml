@@ -17,6 +17,8 @@ prefixes:
   SO: http://purl.obolibrary.org/obo/SO_
   ARO: http://purl.obolibrary.org/obo/ARO_
   GSSO: http://purl.obolibrary.org/obo/GSSO_
+  GENEPIO: http://purl.obolibrary.org/obo/GENEPIO_
+
 imports:
   - linkml:types
 
@@ -2382,16 +2384,18 @@ slots:
     description: >-
       The date on which the sample or data was collected.
     comments: "Insert the date in the following schema: YYYY-MM-DD, if not collected insert 'not collected', if not provided use 'not provided'"
-    pattern: ^(?:19|20)\d\d-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$|(^not collected$)|(^not provided$)
     required: true
     examples:
       - value: not collected
       - value: not provided
+      - value: missing
       - value: "2023-04-28"
     exact_mappings:
       - NCIT:C81286
 # Version: 23.09d
-    range: WhitespaceMinimizedString
+    any_of: 
+      - range: null value date enum
+      - range: date
 
   coll_time:
     title: Collection time
@@ -3430,7 +3434,6 @@ enums:
         description: >-
           Whole Transcriptome Sequencing
 
-
   microbial isolate enum:
     description: >-
       The layout of the library used for sequencing. Restricted text.
@@ -3441,6 +3444,21 @@ enums:
       No:
         description: >-
           Use if the sample is not from a microbial isolate.
+
+  null value date enum:
+    permissible_values:
+      missing:
+        text: missing
+        meaning: GENEPIO:0001618
+        # Version: 2023-08-19
+      not collected:
+        text: not collected
+        meaning: GENEPIO:0001620
+        # Version: 2023-08-19
+      not provided:
+        text: not provided
+        meaning: GENEPIO:0001668
+        # Version: 2023-08-19
 
   phenotyp amr enum:
     description: >-
