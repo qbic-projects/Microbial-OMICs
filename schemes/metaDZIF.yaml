@@ -2259,7 +2259,7 @@ slots:
       - SIO:001013
 # Version: 1.59
     range: WhitespaceMinimizedString
-      
+
   altitude_geo_depth:
     title: Altitude or geographic depth
     description: >-
@@ -2275,7 +2275,7 @@ slots:
       - SIO:000438
 # Version: 1.59
     range: WhitespaceMinimizedString
-    
+
   analysis_to_be_performed:
     title: Analysis to be performed
     description: >-
@@ -2314,10 +2314,9 @@ slots:
     description: >-
       A reference to the Biosample repository of ENA or NCBI.
     comments:
-    recommended: true
     pattern: ^SAM[NEDAG][0-9]{1,}$
     range: WhitespaceMinimizedString
-    
+
   checksum:
     title: Checksum
     description: >-
@@ -2415,7 +2414,6 @@ slots:
 # Version: 23.09d
     range: WhitespaceMinimizedString
 
-
   comment:
     title: Comment
     description: >-
@@ -2428,7 +2426,6 @@ slots:
       - SIO:00167
 # Version: 1.59
     range: WhitespaceMinimizedString
-
 
   country:
     title: Country
@@ -2446,7 +2443,6 @@ slots:
     exact_mappings:
       - SIO:000664
 # Version: 1.59
-
 
   coverage:
     title: Coverage
@@ -2476,7 +2472,7 @@ slots:
       - value: not applicable
       - value: LB-Medium
     range: WhitespaceMinimizedString
-    
+
   disorders:
     title: Disorders
     description: >-
@@ -2492,7 +2488,7 @@ slots:
     exact_mappings:
       - NCIT:C2991
 # Version: 22.07d
-      
+
   elevation:
     title: Elevation
     description: >-
@@ -2528,11 +2524,9 @@ slots:
 
   ghga:
     title: GHGA
-    # TODO: Wait till a unified naming schema was developed for ghga, then check it
     description: >-
       Link to the German Human Genome-Phenome Archive(GHGA).
     comments:
-    recommended: true
     range: WhitespaceMinimizedString
 
   habitat:
@@ -2707,7 +2701,7 @@ slots:
     examples:
       - value: WGS
       - value: Amplicon
-    
+
   longitude:
     title: Longitude
     description: >-
@@ -2737,7 +2731,7 @@ slots:
     examples:
       - value: 25.6°C;60%
     range: WhitespaceMinimizedString
-    
+
   microbial_id:
     title: Microbial ID
     description: >-
@@ -2748,7 +2742,7 @@ slots:
       - value: metagenome
       - value: Mycobacterium tuberculosis
     range: WhitespaceMinimizedString
-    
+
   microbial_isolate:
     title: Microbial isolate
     description: >-
@@ -2778,10 +2772,9 @@ slots:
     exact_mappings:
       - OBI:0001940
 # Version: 2023-03-10
-    
+
   nuc_acid_extr_meth:
     title: Nucleic acid extraction method
-    # TODO: Example for Producer/Custom: name; description
     description: >-
       Any procedure used to purify nucleic acids (DNA or RNA) from a biological sample.
     comments: "Use following format: Producer/Custom: name; description or Producer/Custom: name. Can also be Author: DOI"
@@ -2796,7 +2789,7 @@ slots:
     exact_mappings:
       - NCIT:C177560
 # Version: 22.07d
-    
+
   number_contig:
     title: Number contig
     description: >-
@@ -2808,7 +2801,7 @@ slots:
       - value: 1800000
       - value: 20000
     range: Integer
-    
+
   pcr_primers:
     title: PCR primer
     description: >-
@@ -2844,7 +2837,7 @@ slots:
     comments: Has to be empty. Is filled by QBiC.
     pattern: ^$
     range: WhitespaceMinimizedString
-    
+
   rrna_treatment:
     title: rRNA treatment
     description: >-
@@ -2860,13 +2853,12 @@ slots:
     comments: "If not available use 'not available'; so far only SRA 
       and ENA are supported. Use the following format: SRA: Accession or ENA: Accession. Use only upper
       case letters and digits. Use the run level for the accession number."
-    recommended: true
     pattern: "(^not available$|^ENA: (E|D|S)RR[0-9]{6,}$|^SRA: (E|D|S)RR[0-9]{6,}$)"
     examples:
       - value: not available
       - value: "ENA: ERR2193251"
     range: WhitespaceMinimizedString
-    
+
   sample_label:
     title: Sample label
     description: >-
@@ -2912,7 +2904,7 @@ slots:
       - value: 25.5 mL
       - value: 2 mg
     range: WhitespaceMinimizedString
-    
+
   sample_sub_site_feat:
     title: Sample subsite or subfeature
     description: >-
@@ -2920,7 +2912,7 @@ slots:
     comments: Take the values either from the UBERON Ontology (UBERON:0001062)  or from the ENVO Ontology (ENVO:00000428). Terms in brackets are superterms. Use terms which are subterms of the one entered at sample site or feature.
     recommended: true
     range: sample site enum
-    
+
   seq_meth:
     title: Sequencing method
     description: >-
@@ -2949,7 +2941,6 @@ slots:
 
   site_conditions:
     title: Site conditions
-    # TODO: write pattern
     description: >-
       Environmental temperature, RH, salinity, pH.
     comments: Use semicolon-separation.
@@ -2957,7 +2948,7 @@ slots:
     examples:
       - value: 25.6°C;60%
     range: WhitespaceMinimizedString
-    
+
   smoking_status:
     title: Smoking status
     description: >-
@@ -2972,7 +2963,7 @@ slots:
     exact_mappings:
       - NCIT:C19796
 # Version 22.07d
-  
+
   state:
     title: State
     description: >-
@@ -3006,13 +2997,12 @@ slots:
     exact_mappings:
       - OBI:0001962
 # Version 2023-03-10
-    
+
   zbr:
     title: Zentrales Bioprobenregister
     description: >-
       Link to the Zentrales Bioproben Registry of the DZIF.
     comments:
-    recommended: true
     range: WhitespaceMinimizedString
 
 enums:
