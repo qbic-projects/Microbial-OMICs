@@ -1,8 +1,8 @@
 # Microbial-OMICs
 This repository holds the metadata schemes for the DZIF microbial OMICs database. The schemes are located in `schemes/metaDZIF.yaml`. They are implemented in [LinkML](https://linkml.io/) and are derived from the [NFDI4Microbiota](https://nfdi4microbiota.de/) [metadata standards](https://gitfront.io/r/MDS-Majid/wh11wCd2JZQM/NFDI4Microbiota-MetadataStandards/). So far NGS-based schemes are implemented. Mass-spec related schemes should be released mid of 2024.
 
-To insert ontologies as controlled vocabularies and build the DZIF DataHarmonizer, a fork of the original [DataHarmonizer](https://github.com/cidgoh/DataHarmonizer), run the script `DataHarmonizerBuilder.py` in the `src` folder after creating a [conda](https://anaconda.org) environment from the `environment.yaml` with the flag `--repo <name of this repository/folder>`. If you are unfamiliar with conda please refer to their [documentation](https://docs.anaconda.com/free/anaconda/install/) for installation.
-<!--- TODO: Insert link to repo of DZIF DataHarmonizer --->
+To insert ontologies as controlled vocabularies and build the [DZIF DataHarmonizer](https://github.com/qbic-projects/DZIFDataHarmonizer), a fork of the original [DataHarmonizer](https://github.com/cidgoh/DataHarmonizer), run the script `DataHarmonizerBuilder.py` in the `src` folder after creating a [conda](https://anaconda.org) environment from the `environment.yaml` with the flag `--repo <name of this repository/folder>`. If you are unfamiliar with conda please refer to their [documentation](https://docs.anaconda.com/free/anaconda/install/) for installation.
+
 For setup and activation of the environment:
 1. `conda env create -f environment.yml`
 2. `conda activate Microbial-OMICs`
