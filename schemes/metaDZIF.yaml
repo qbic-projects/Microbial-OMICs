@@ -357,7 +357,6 @@ classes:
       - phenotyp_amr
       - disorders
       - zbr
-      - ghga
       - run_ref
       - biosample
       - QBiCCode
@@ -442,9 +441,6 @@ classes:
         rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 5
-        slot_group: Link
-      ghga:
         rank: 5
         slot_group: Link
       run_ref:
@@ -1062,7 +1058,6 @@ classes:
       - phenotyp_amr
       - disorders
       - zbr
-      - ghga
       - run_ref
       - biosample
       - QBiCCode
@@ -1147,9 +1142,6 @@ classes:
         rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 5
-        slot_group: Link
-      ghga:
         rank: 5
         slot_group: Link
       run_ref:
@@ -1507,7 +1499,6 @@ classes:
       - phenotyp_amr
       - disorders
       - zbr
-      - ghga
       - run_ref
       - biosample
       - QBiCCode
@@ -1598,9 +1589,6 @@ classes:
         rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 5
-        slot_group: Link
-      ghga:
         rank: 5
         slot_group: Link
       run_ref:
@@ -1816,7 +1804,6 @@ classes:
       - phenotyp_amr
       - disorders
       - zbr
-      - ghga
       - run_ref
       - biosample
       - QBiCCode
@@ -1904,9 +1891,6 @@ classes:
         rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 5
-        slot_group: Link
-      ghga:
         rank: 5
         slot_group: Link
       run_ref:
@@ -2121,7 +2105,6 @@ classes:
       - phenotyp_amr
       - disorders
       - zbr
-      - ghga
       - run_ref
       - biosample
       - QBiCCode
@@ -2209,9 +2192,6 @@ classes:
         rank: 4
         slot_group: Host Metadata
       zbr:
-        rank: 5
-        slot_group: Link
-      ghga:
         rank: 5
         slot_group: Link
       run_ref:
