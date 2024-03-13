@@ -60,7 +60,6 @@ classes:
       - mat_conditions
       - microbial_id
       - chemical_exposure
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -145,9 +144,6 @@ classes:
       chemical_exposure:
         rank: 3
         slot_group: Biological Metadata
-      zbr:
-        rank: 4
-        slot_group: Link
       run_ref:
         rank: 4
         slot_group: Link
@@ -200,7 +196,6 @@ classes:
       - host_diet
       - habitat
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -311,9 +306,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -356,7 +348,6 @@ classes:
       - host_diet
       - phenotyp_amr
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -440,9 +431,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -485,7 +473,6 @@ classes:
       - mat_conditions
       - microbial_id
       - chemical_exposure
-      - zbr
       - biosample
       - comment
     slot_usage:
@@ -567,9 +554,6 @@ classes:
       chemical_exposure:
         rank: 4
         slot_group: Biological Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       biosample:
         rank: 5
         slot_group: Link
@@ -615,7 +599,6 @@ classes:
       - host_diet
       - habitat
       - disorders
-      - zbr
       - biosample
       - comment
     slot_usage:
@@ -724,9 +707,6 @@ classes:
       disorders:
         rank: 5
         slot_group: Host Metadata
-      zbr:
-        rank: 6
-        slot_group: Link
       biosample:
         rank: 6
         slot_group: Link
@@ -763,7 +743,6 @@ classes:
       - mat_conditions
       - microbial_id
       - chemical_exposure
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -847,9 +826,6 @@ classes:
       chemical_exposure:
         rank: 3
         slot_group: Biological Metadata
-      zbr:
-        rank: 4
-        slot_group: Link
       run_ref:
         rank: 4
         slot_group: Link
@@ -901,7 +877,6 @@ classes:
       - host_diet
       - habitat
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -1012,9 +987,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -1057,7 +1029,6 @@ classes:
       - host_diet
       - phenotyp_amr
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -1141,9 +1112,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -1188,7 +1156,6 @@ classes:
       - mat_conditions
       - microbial_id
       - chemical_exposure
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -1278,9 +1245,6 @@ classes:
       chemical_exposure:
         rank: 3
         slot_group: Biological Metadata
-      zbr:
-        rank: 4
-        slot_group: Link
       run_ref:
         rank: 4
         slot_group: Link
@@ -1334,7 +1298,6 @@ classes:
       - host_diet
       - habitat
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -1451,9 +1414,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -1498,7 +1458,6 @@ classes:
       - host_diet
       - phenotyp_amr
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -1588,9 +1547,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -1643,7 +1599,6 @@ classes:
       - host_diet
       - habitat
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -1757,9 +1712,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -1803,7 +1755,6 @@ classes:
       - host_diet
       - phenotyp_amr
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -1890,9 +1841,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -1944,7 +1892,6 @@ classes:
       - host_diet
       - habitat
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -2058,9 +2005,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
@@ -2104,7 +2048,6 @@ classes:
       - host_diet
       - phenotyp_amr
       - disorders
-      - zbr
       - run_ref
       - biosample
       - QBiCCode
@@ -2191,9 +2134,6 @@ classes:
       disorders:
         rank: 4
         slot_group: Host Metadata
-      zbr:
-        rank: 5
-        slot_group: Link
       run_ref:
         rank: 5
         slot_group: Link
