@@ -57,6 +57,22 @@ config:
         sample_site_enum:
           term_to_replace: "#<sample site enum envo>\n"
           descending_from: "http://purl.obolibrary.org/obo/ENVO_00000428"
+    MS:
+      name: "Mass spectrometry ontology"
+      version: "4.1.154"
+      DOI: https://doi.org/10.1093/database/bat009
+      URL: http://purl.obolibrary.org/obo/ms.owl
+      license: https://creativecommons.org/licenses/by/3.0/
+      format: 
+        zipped: False
+        file_suffix: "owl"
+      enum:
+        instrument_enum:
+          term_to_replace: "#<instrument enum>\n"
+          descending_from: "http://purl.obolibrary.org/obo/MS_1000031"
+        ion_source_enum:
+          term_to_replace: "#<ion source enum>\n"
+          descending_from: "http://purl.obolibrary.org/obo/MS_1000008"
     UBERON:
       name: "Uber-anatomy ontology"
       version: "2024-02-20"

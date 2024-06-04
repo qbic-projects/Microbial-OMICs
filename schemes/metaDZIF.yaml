@@ -64,6 +64,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
 
       sample_label:
@@ -156,6 +157,9 @@ classes:
       comment:
         rank: 6
         slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
 
   Microbial-Genomic-Raw-Data-isolated-from-Non-human-Host:
     title: Genomic raw data from a non-human host
@@ -200,6 +204,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -318,6 +323,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Genomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
@@ -352,6 +360,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -443,6 +452,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Genomic-Assemblies-isolated-from-Environment:
     is_a: dh_interface
@@ -475,6 +487,7 @@ classes:
       - chemical_exposure
       - biosample
       - comment
+      - provenance
     slot_usage:
       run_ref:
         rank: 1
@@ -560,6 +573,9 @@ classes:
       comment:
         rank: 6
         slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
 
   Microbial-Genomic-Assemblies-isolated-from-Non-human-Host:
     #is_a: dh_interface
@@ -601,6 +617,7 @@ classes:
       - disorders
       - biosample
       - comment
+      - provenance
     slot_usage:
       run_ref:
         rank: 1
@@ -713,6 +730,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Environment:
     is_a: dh_interface
@@ -747,6 +767,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -838,6 +859,9 @@ classes:
       comment:
         rank: 6
         slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
@@ -881,6 +905,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -999,6 +1024,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Metagenomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
@@ -1033,6 +1061,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -1124,6 +1153,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Amplicon-Raw-Data-isolated-from-Environment:
     is_a: dh_interface
@@ -1160,6 +1192,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -1257,6 +1290,9 @@ classes:
       comment:
         rank: 6
         slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
 
   Microbial-Amplicon-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
@@ -1302,6 +1338,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -1426,6 +1463,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Amplicon-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
@@ -1462,6 +1502,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -1559,6 +1600,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Transcriptomic-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
@@ -1603,6 +1647,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -1724,7 +1769,10 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
-    
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
   Microbial-Transcriptomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
     slots:
@@ -1759,6 +1807,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -1853,6 +1902,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Metatranscriptomic-Raw-Data-isolated-from-Non-human-Host:
     is_a: dh_interface
@@ -1865,6 +1917,7 @@ classes:
       - lib_selection
       - nuc_acid_extr_meth
       - rrna_treatment
+      - checksum
       - coll_date
       - coll_time
       - coll_by
@@ -1896,6 +1949,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -2017,6 +2071,9 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Metatranscriptomic-Raw-Data-isolated-from-Human-Host:
     is_a: dh_interface
@@ -2052,6 +2109,7 @@ classes:
       - biosample
       - QBiCCode
       - comment
+      - provenance
     slot_usage:
       sample_label:
         rank: 1
@@ -2146,18 +2204,305 @@ classes:
       comment:
         rank: 7
         slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Proteomic-Raw-Data-isolated-from-Non-human-Host:
     # TODO: Everything - Environmental and biological Metadata finished
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - instrument
+      - modifications
+      - ion_source
+      - post_source_component
+      - sample_processing_protocol
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      modifications:
+        rank: 1
+        slot_group: Technical Metadata
+      ion_source:
+        rank: 1
+        slot_group: Technical Metadata
+      post_source_component:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_processing_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Proteomic-Raw-Data-isolated-from-Human-Host:
     # TODO
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - instrument
+      - modifications
+      - ion_source
+      - post_source_component
+      - sample_processing_protocol
+      - checksum
+      - coll_date
+      - coll_by
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      modifications:
+        rank: 1
+        slot_group: Technical Metadata
+      ion_source:
+        rank: 1
+        slot_group: Technical Metadata
+      post_source_component:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_processing_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Metabolomic-Raw-Data-isolated-from-Non-human-Host:
     # TODO
+    is_a: dh_interface
 
   Microbial-Metabolomic-Raw-Data-isolated-from-Human-Host:
     # TODO
+    is_a: dh_interface
 
 slots:
   age:
@@ -2382,6 +2727,7 @@ slots:
     range: WhitespaceMinimizedString
 
   culture_substrate:
+# TODO: Derive this from https://ontobee.org/ontology/MCO?iri=http://purl.obolibrary.org/obo/OBI_0000079, values should be 
     title: Culture substrate
     description: >-
       A mixture of chemicals used by the microorganism to feed on.
@@ -2521,7 +2867,7 @@ slots:
       - value: Rattus norvegicus
     exact_mappings:
       - SIO:000120
-# Version 1.59
+# Version: 1.59
 
   host_spec_sample_depth:
     title: Host specific sample depth
@@ -2552,6 +2898,35 @@ slots:
       - value: 74 kg
     range: WhitespaceMinimizedString
 
+  instrument:
+    title: Instrument
+    description: >-
+      Description of the instrument or the mass spectrometer.
+    comments:
+    required: true
+    examples:
+      - value: TSQ
+      - value: BioTOF III
+      - value: 4800 Proteomics Analyzer
+    range: instrument enum
+    exact_mappings:
+      - MS:1000463
+# Version: 4.1.153
+
+  ion_source:
+    title: Ion source
+    description: >-
+      The method by which gas phase ions are generated from the sample.
+    comments:
+    required: true
+    examples:
+      - value: matrix-assisted laser desorption ionization
+      - value: microelectrospray
+    range: ion source enum
+    exact_mappings:
+      - MS:1000008
+# Version: 4.1.153
+
   latitude:
     title: Latitude
     description: >-
@@ -2569,7 +2944,7 @@ slots:
     range: WhitespaceMinimizedString
     exact_mappings:
       - SIO:000319
-# Version 1.59
+# Version: 1.59
 
   lib_layout:
     title: Library layout
@@ -2633,14 +3008,14 @@ slots:
     pattern: "((^[+-]?[0-9]+[.]?[0-9]{0,8}$)|(^not collected$)|(^not provided$))"
     required: true
     examples:
-      - value: not collected
-      - value: not provided
       - value: 102.234
       - value: -50.33456
+      - value: not collected
+      - value: not provided
     range: WhitespaceMinimizedString
     exact_mappings:
       - SIO:000318
-# Version 1.59
+# Version: 1.59
 
   mat_conditions:
     title: Material conditions
@@ -2675,6 +3050,20 @@ slots:
       - NCIT:C53471
 # Version: 22.07d
 
+  modifications:
+    title: Modifications
+    description: >-
+      The process of covalently altering one or more amino acids in a protein after the protein has been completely translated and released from the ribosome.
+    comments: 
+    required: true
+    examples:
+      - value: iodoacetamide derivatized residue
+      - value: no PTMs were introduced
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - GO:0043687
+# Version: 2024-04-24
+
   n50:
     title: N50
     description: >-
@@ -2688,7 +3077,6 @@ slots:
       Is an integer number.
     pattern: ^[0-9]{1,}$
     recommended: true
-    range: Integer
     exact_mappings:
       - OBI:0001940
 # Version: 2023-03-10
@@ -2704,7 +3092,7 @@ slots:
       - value: "Custom: Phenol-Chloroform Extraction"
       - value: "Qiagen: DNeasy PowerWater Kit"
       - value: "Sigma-Aldrich: GenElute(TM) Microbiome DNA Purification Kit"
-      - value: "Djurhuus et. al: https://doi.org/10.3389/fmars.2017.00314"
+      - value: "Djurhuus et al.: https://doi.org/10.3389/fmars.2017.00314"
     range: WhitespaceMinimizedString
     exact_mappings:
       - NCIT:C177560
@@ -2720,7 +3108,7 @@ slots:
     examples:
       - value: 1800000
       - value: 20000
-    range: Integer
+
 
   pcr_primers:
     title: PCR primer
@@ -2749,6 +3137,51 @@ slots:
     exact_mappings:
       - ARO:3004299
 # last accessed Wed Feb 14 09:50:08 GMT 2024
+
+# TODO detector and analyzer? see https://github.com/HUPO-PSI/MIAPE/blob/main/MIAPE_MS_2.98.pdf
+  post_source_component:
+    title: Post source component
+    description: >-
+      All major components after the ion source; for example, ion traps, collision cells, time-of-flight tubes, detectors (including Fourier Transform Ion Cyclotron Resonance detection). Note that where a collision cell is an ion trap (including FT-ICR cells) or if the instrument has a hybrid architecture, the requirements for the relevant components must be combined.
+    comments: Please refer to https://github.com/HUPO-PSI/MIAPE/blob/main/MIAPE_MS_2.98.pdf, section "Reporting guidelines for mass spectrometry" point 3 for a detailed description (as well as appendix one).
+    required: true
+    range: WhitespaceMinimizedString
+
+  project_description:
+    title: Project description
+    description: >-
+      Project description.
+    comments: A short(!) description of the whole project.
+    required: true
+    examples:
+      - value: B6-CIITA-E cell line (C57Bl/6 fibroblasts expressing MHC-II molecules I-Ab and I-Ed) was infected with Influenza A virus (A/Puerto Rico/8/1934, PR8)
+      - value: left uninfected (control), and the MHC-class II-associated peptidome analysed via immunopeptidomics
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - NCIT:C165054
+# Version: 2024-05-07
+
+  project_title:
+    title: Project title
+    description: >-
+      An official descriptive name of a document, e.g. the long name of a study protocol provided by the study sponsor.
+    comments: 
+    required: true
+    examples:
+      - value: Identification of a cryptic MHC-E epitope from influenza virus
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - NCIT:C42774
+# Version: 2024-05-07
+
+  provenance:
+    title: Provenance
+    description: >-
+      A field containing a DataHarmonizer versioning marker. It is issued by DataHarmonizer when validation is applied to a given row of data.
+    comments: 
+    range: Provenance
+    exact_mappings:
+      - NCIT:C42774
 
   QBiCCode:
     title: QBiC Code
@@ -2784,13 +3217,13 @@ slots:
     description: >-
       A set of information affixed to the sample container that contains all required information to properly and completely identify the specimen.
     comments:
-      Base name of the sequencing files
+      Base name of the file
     required: true
     pattern: "^.{1,}$"
     range: WhitespaceMinimizedString
     exact_mappings:
       - NCIT:C115528
-# Version 22.07d
+# Version: 22.07d
 
   sample_material:
     title: Sample material
@@ -2800,6 +3233,19 @@ slots:
       Use either ENVO:00010483 or OBI:0100051 as superterm. 
     required: true
     range: sample material enum
+
+  sample_processing_protocol:
+    title: Sample processing protocol
+    description: >-
+      A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.
+    comments: Please include all necessary information how the sample was generated and processed. Also include parameters used in the acquisition of the mass spectra.
+    required: true
+    examples:
+      - value: 200x106 B6-CIITA-Ed cells were either mock infected or PR8-infected in suspension in 0.1% BSA/PBS for 1 hr and incubated at 37 °C, 6% CO2 for ~18 hr. Cells were harvested with PBS containing 2 mM EDTA. Cell lysis and immunoprecipitation of peptide/MHC-II complexes were carried out largely as previously described, and all chemicals used after cell harvest were analytical grade or equivalent when available. Following lysis, all steps were conducted in Protein LoBind tubes from Eppendorf or glass Econo-Columns (Bio-Rad 7371012). Briefly, anti-MHC-II antibody (clone M5/114.5, BioXCell) was cross-linked to Protein G Sepharose beads (GE 17061801). Lysates and beads were co-incubated and rotated overnight at 4 °C. After washing, peptide/MHC-II complexes were eluted in 10% acetic acid, and the collected material was lyophilized. After immunoprecipitation, purified peptide/MHC complexes were dissolved in 120 µl loading buffer (0.1% trifluoroacetic acid (TFA), 1% acetonitrile (ACN) in water). Using an Ultimate 300 HPLC system (Thermo Fisher), samples were loaded onto a 4.6 x 50-mm ProSwift RP-1S (Thermo Fisher) monolith column, and peptides were eluted by applying a 10 min linear gradient from 3% to 30% ACN in 0.1% TFA at a flow rate of 500 nl/min. Fractions were collected in 1-minute intervals. Alternate fractions (odd and even) were combined in two final fractions, dried, resuspended in 20 ul of loading buffer, and analyzed by LC-MS2. Peptides were analyzed by LC-MS2 using an Ultimate 3000 RSLCnano System supplemented with a PepMap C18 column (2 µm particle size, 75 µm × 50 cm, Thermo Fisher) directly interphased with an Orbitrap Fusion™ Lumos™ Tribrid™ Mass Spectrometer (Thermo Fisher). A 60 min linear gradient from 3% to 25% ACN in 5% DMSO/0.1% formic acid at a flow rate of 250 nl/min was applied for peptide elution. Peptide ions were introduced to the mass spectrometer using an Easy-Spray Source at 2000 V. Detection was performed with a resolution of 120,000 for full MS (300-1500 m/z scan range), and precursors were selected using TopSpeed ion selection within a 2 second cycle time, and a quadrupole isolation width of 1.2 amu for fragmentation. For MS2 acquisition, the resolution was set at 30,000 and high-energy collisional dissociation (HCD) energy was set at 28 for peptides with 2 to 4 charges and 32 for peptides that were singly charged.
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - OBI:0000272
+# Version: 2024-01-09
 
   sample_site_feat:
     title: Sample site or feature
@@ -2857,7 +3303,7 @@ slots:
       - value: other
     exact_mappings:
       - GSSO:000105
-# Version 2.0.5
+# Version: 2.0.5
 
   site_conditions:
     title: Site conditions
@@ -2882,7 +3328,7 @@ slots:
       - value: Medium-smoker
     exact_mappings:
       - NCIT:C19796
-# Version 22.07d
+# Version: 22.07d
 
   state:
     title: State
@@ -2916,7 +3362,7 @@ slots:
     range: WhitespaceMinimizedString
     exact_mappings:
       - OBI:0001962
-# Version 2023-03-10
+# Version: 2023-03-10
 
   zbr:
     title: Zentrales Bioprobenregister
@@ -3290,6 +3736,20 @@ enums:
       Ambystoma mexicanum:
         description: >-
           Ambystoma mexicanum
+
+# TODO
+  instrument enum:
+    description: >-
+      The model of the instrument/mass spectrometer.
+    permissible_values:
+#<instrument enum>
+
+# TODO
+  ion source enum:
+    description: >-
+      The method how the ions are generated by the instrument.
+    permissible_values:
+#<ion source enum>
 
   library layout enum:
     description: >-
