@@ -4,7 +4,7 @@ This repository holds the metadata schemes for the DZIF microbial OMICs database
 To insert ontologies as controlled vocabularies and build the [DZIF DataHarmonizer](https://github.com/qbic-projects/DZIFDataHarmonizer), a fork of the original [DataHarmonizer](https://github.com/cidgoh/DataHarmonizer), run the script `DataHarmonizerBuilder.py` in the `src` folder after creating a [conda](https://anaconda.org) environment from the `environment.yaml` with the flag `--repo <name of this repository/folder>`. If you are unfamiliar with conda please refer to their [documentation](https://docs.anaconda.com/free/anaconda/install/) for installation.
 
 For setup and activation of the environment:
-1. `conda env create -f environment.yml`
+1. `conda env create -f environment.yaml`
 2. `conda activate Microbial-OMICs`
 
 After setup and activation of the created conda environment, run this command from the repository folder:
