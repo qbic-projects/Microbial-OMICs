@@ -2835,7 +2835,7 @@ slots:
     title: Habitat
     description: >-
       An environmental system which can sustain and allow the growth of an ecological population.
-    comments: "Free text to describe the habitat of the host. Use 'not applicable' if not collected from host."
+    comments: "Free text to describe the habitat of the host."
     recommended: true
     examples:
       - value: rural
