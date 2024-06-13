@@ -2640,7 +2640,7 @@ slots:
     comments: Do NOT provide a persons name!
     required: true
     examples:
-      - value: Quantitative Biology Center
+      - value: Quantitative Biology Center, https://ror.org/00v34f693
     range: collected by enum
 
   coll_date:
