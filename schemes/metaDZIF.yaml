@@ -2851,7 +2851,7 @@ slots:
     title: Host diet
     description: >-
       The food and drink consumed by an organism day to day. 
-    comments: "Can be 'not applicable' if sample was not collected from a host."
+    comments: 
     required: true
     multivalued: true
     range: host diet enum
@@ -2864,11 +2864,11 @@ slots:
     description: >-
       The vertical measurement or distance from the base to the top of an object;
       the vertical dimension of extension.
-    comments: "Height of host. Either 'not applicable' or to be filled with a value in cm."
+    comments: "Height of host. To be filled with a value in cm."
     required: true
-    pattern: (^not applicable$|^not provided$|^[0-9]{1,4} cm$)
+    pattern: (^not provided$|^[0-9]{1,4} cm$)
     examples:
-      - value: not applicable
+      - value: not provided
       - value: 28 cm
     exact_mappings:
       - NCIT:C25347
@@ -2879,11 +2879,11 @@ slots:
     title: Host length
     description: >-
       The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.
-    comments: "Length of host. Either 'not applicable' or to be filled with a value in cm."
+    comments: "Length of host. To be filled with a value in cm."
     required: true
-    pattern: (^not applicable$|^not provided$|^[0-9]{1,4} cm$)
+    pattern: (^not provided$|^[0-9]{1,4} cm$)
     examples:
-      - value: not applicable
+      - value: not provided
       - value: 28 cm
     exact_mappings:
       - NCIT:C25334
@@ -2926,11 +2926,11 @@ slots:
       Weight is the amount or quantity or unit of heaviness or mass; amount a thing weighs.
       (Source: https://www.dictionary.com/browse/weight)
     comments: "Weight in kg. Provide with max. 3 places after the comma. Does not have to be that precise if
-      not needed. Can be 'not applicable' if no host was present."
+      not needed."
     required: true
-    pattern: "(^not applicable$|^not provided$|^[1-9][0-9]{0,3} kg$|^[1-9][0-9]{0,3}[.][0-9]{1,3} kg$|^[0-9][.][0-9]{1,3} kg$)"
+    pattern: "(^not provided$|^[1-9][0-9]{0,3} kg$|^[1-9][0-9]{0,3}[.][0-9]{1,3} kg$|^[0-9][.][0-9]{1,3} kg$)"
     examples:
-      - value: not applicable
+      - value: not provided
       - value: 74 kg
     range: WhitespaceMinimizedString
 
