@@ -33,7 +33,7 @@ config:
       version: "2024-01-09"
       DOI: https://doi.org/10.1371/journal.pone.0154556
       URL: http://purl.obolibrary.org/obo/obi/2024-01-09/obi.owl
-      license: Ontology for Biomedical Investigations
+      license: http://creativecommons.org/licenses/by/4.0/
       format: 
         zipped: False
         file_suffix: "owl"
