@@ -52,10 +52,10 @@ def handlePandasDfRor(dataFrame: pd.DataFrame, termsToKeep: list) -> list:
 def handleOntologyDictToYAMLList(dictionary: dict) -> list:
     dictionaryToYAMLList = []
     for key in dictionary.keys():
-        if "      \"" + dictionary[key]["label"] + "\" :\n" in dictionaryToYAMLList:
+        if "      \"" + dictionary[key]["label"] + " [" + dictionary[key]["id"] + "]\" :\n" in dictionaryToYAMLList:
             continue
-        dictionaryToYAMLList.append("      \"" + dictionary[key]["label"] + "\" :\n")
-        dictionaryToYAMLList.append("        text: \"" + dictionary[key]["label"]  + "\"\n")
+        dictionaryToYAMLList.append("      \"" + dictionary[key]["label"] + " [" + dictionary[key]["id"] + "]\" :\n")
+        dictionaryToYAMLList.append("        text: \"" + dictionary[key]["label"] + " [" + dictionary[key]["id"] + "]\"\n")
         dictionaryToYAMLList.append("        meaning: \"" + dictionary[key]["id"] + "\"\n")
     return dictionaryToYAMLList
 
