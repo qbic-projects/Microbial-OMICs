@@ -3090,9 +3090,10 @@ slots:
     title: Modifications
     description: >-
       The process of covalently altering one or more amino acids in a protein after the protein has been completely translated and released from the ribosome.
-    comments: 
+    comments: "Can be multivalued, separation of modifications by ';'"
     required: true
     examples:
+      - value: phosphorylated residue;deamidated residue;iodoacetamide derivatized residue
       - value: iodoacetamide derivatized residue
       - value: no PTMs were introduced
     range: WhitespaceMinimizedString
