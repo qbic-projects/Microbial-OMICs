@@ -45,6 +45,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -99,6 +100,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -180,6 +184,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -242,6 +247,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -348,6 +356,7 @@ classes:
       - checksum
       - coll_date
       - coll_by
+      - facility
       - country
       - state
       - sample_site_feat
@@ -399,6 +408,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -482,6 +494,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -534,6 +547,9 @@ classes:
         slot_group: Environmental Metadata
       coll_by:
         rank: 3
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
         slot_group: Environmental Metadata
       country:
         rank: 3
@@ -607,6 +623,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -667,6 +684,9 @@ classes:
         rank: 3
         slot_group: Environmental Metadata
       coll_by:
+        rank: 3
+        slot_group: Environmental Metadata
+      facility:
         rank: 3
         slot_group: Environmental Metadata
       country:
@@ -768,6 +788,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -820,6 +841,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -897,6 +921,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -958,6 +983,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -1061,6 +1089,7 @@ classes:
       - checksum
       - coll_date
       - coll_by
+      - facility
       - country
       - state
       - sample_site_feat
@@ -1111,6 +1140,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -1193,6 +1225,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -1251,6 +1284,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -1330,6 +1366,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -1397,6 +1434,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -1502,6 +1542,7 @@ classes:
       - checksum
       - coll_date
       - coll_by
+      - facility
       - country
       - state
       - sample_site_feat
@@ -1558,6 +1599,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -1639,6 +1683,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -1704,6 +1749,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -1811,6 +1859,7 @@ classes:
       - checksum
       - coll_date
       - coll_by
+      - facility
       - country
       - state
       - sample_site_feat
@@ -1865,6 +1914,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -1949,6 +2001,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -2013,6 +2066,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -2117,6 +2173,7 @@ classes:
       - checksum
       - coll_date
       - coll_by
+      - facility
       - country
       - state
       - sample_site_feat
@@ -2170,6 +2227,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -2253,6 +2313,7 @@ classes:
       - coll_date
       - coll_time
       - coll_by
+      - facility
       - country
       - state
       - city
@@ -2319,6 +2380,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -2422,6 +2486,7 @@ classes:
       - checksum
       - coll_date
       - coll_by
+      - facility
       - country
       - state
       - sample_site_feat
@@ -2477,6 +2542,9 @@ classes:
         rank: 2
         slot_group: Environmental Metadata
       coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
         rank: 2
         slot_group: Environmental Metadata
       country:
@@ -2849,6 +2917,16 @@ slots:
     exact_mappings:
       - SIO:001014
 # Version: 1.59
+
+  facility:
+    title: Facility
+    description: >-
+      The facilities name within the organisation (see Collected by for the organisation); e.g. group name. 
+    comments: 
+    required: true
+    examples:
+      - value: Computational Microbiology Bridge Group
+    range: WhitespaceMinimizedString
 
   ghga:
     title: GHGA
