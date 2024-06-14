@@ -2775,6 +2775,25 @@ slots:
       - value: LB-Medium
     range: WhitespaceMinimizedString
 
+  digestion_enzyme:
+    title: Digestion enzyme
+    description: >-
+      Information about the used enzymes for the proteolysis.
+    comments:
+    range: WhitespaceMinimizedString
+    required: true
+
+  digestion_method:
+    title: Digestion method
+    description: >-
+      A technique for proteolysis of proteins into peptides by treatment with any of various enzymes.
+    comments:
+    range: digestion method enum
+    required: true
+    exact_mappings:
+      - NCIT:C70845
+# Version: 24.04e
+
   disorders:
     title: Disorders
     description: >-
@@ -3623,6 +3642,20 @@ enums:
         description: >-
         
       Vatican City:
+        description: >-
+        
+  digestion method enum:
+    permissible_values:
+      in gel:
+        description: >-
+
+      in solution:
+        description: >-
+        
+      iST proteomics kit:
+        description: >-
+        
+      on beads:
         description: >-
         
 
