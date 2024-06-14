@@ -2556,13 +2556,13 @@ slots:
       Age is the length of time that a person has lived or a thing has existed.
     comments:
       "The age of the host either in hours (xx h), days (xx d), months (xxx m) or years (xxx y).
-      Can be 'not applicable' of sample was not collected from a host. Use only the provided formats."
+      Use only the provided formats."
     examples:
       - value: 42 h
       - value: 24 d
       - value: 13 m
       - value: 78 y
-    pattern: (^not applicable$|^[0-9]{1,3} h$|^[0-9]{1,3} d$|^[0-9]{1,3} m$|^[0-9]{1,3} y$)
+    pattern: (^[0-9]{1,3} h$|^[0-9]{1,3} d$|^[0-9]{1,3} m$|^[0-9]{1,3} y$)
     required: true
     exact_mappings:
       - SIO:001013
