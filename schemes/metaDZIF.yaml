@@ -2990,8 +2990,8 @@ slots:
     range: library layout enum
     required: true
     examples:
-      - value: single
-      - value: paired
+      - value: single-end
+      - value: paired-end
 
   lib_selection:
     title: Library selection
@@ -3792,12 +3792,12 @@ enums:
     description: >-
       The layout of the library used for sequencing.
     permissible_values:
-      single:
+      single-end:
         description: >-
-          Single End library layout.
-      paired:
+          Single-end library layout.
+      paired-end:
         description: >-
-          Paired End library layout.
+          Paired-end library layout.
 
   library selection enum:
     description: >-
