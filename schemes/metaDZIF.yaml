@@ -2643,12 +2643,11 @@ slots:
     description: >-
       Chemical exposure is a process to expose one or more individuals to a chemical substance.
     comments:
-      'Use the <a href="https://www.ebi.ac.uk/chebi/">ChEBI</a> Ontology to look up terms.'
+      'Use the ChEBI Ontology (https://www.ebi.ac.uk/chebi/) to look up terms.'
     recommended: true
-    multivalued: true
     range: WhitespaceMinimizedString
     examples:
-      - value: glyphosate; caffeine
+      - value: glyphosate [CHEBI:27744];caffeine [CHEBI:27732]
     exact_mappings:
       - SIO:001399
 # Version: 1.59
