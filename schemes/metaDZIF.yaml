@@ -2782,8 +2782,7 @@ slots:
       person affected or those in contact with the person. The term is often used broadly to include
       injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure
       and function.
-    comments: "Use 'not applicable' if not collected from a host. Use 'not collected' if not collected. Use
-      'not provided' if not provided."
+    comments: "Use 'not collected' if not collected. Use 'not provided' if not provided."
     multivalued: true
     range: disorder enum
     required: true
