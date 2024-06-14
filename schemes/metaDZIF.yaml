@@ -2646,6 +2646,7 @@ slots:
       'Use the ChEBI Ontology (https://www.ebi.ac.uk/chebi/) to look up terms.'
     recommended: true
     range: WhitespaceMinimizedString
+    pattern: '^([^\[\];]+ \[CHEBI:\d+\](;[^\[\];]+ \[CHEBI:\d+\])*)?$'
     examples:
       - value: glyphosate [CHEBI:27744];caffeine [CHEBI:27732]
     exact_mappings:
