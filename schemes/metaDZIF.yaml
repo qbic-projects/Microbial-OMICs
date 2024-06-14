@@ -2246,7 +2246,8 @@ classes:
       - instrument
       - modifications
       - ion_source
-      - post_source_component
+      - digestion_method
+      - digestion_enzyme
       - sample_processing_protocol
       - checksum
       - coll_date
@@ -2299,7 +2300,10 @@ classes:
       ion_source:
         rank: 1
         slot_group: Technical Metadata
-      post_source_component:
+      digestion_method:
+        rank: 1
+        slot_group: Technical Metadata
+      digestion_enzyme:
         rank: 1
         slot_group: Technical Metadata
       sample_processing_protocol:
@@ -2412,7 +2416,8 @@ classes:
       - instrument
       - modifications
       - ion_source
-      - post_source_component
+      - digestion_method
+      - digestion_enzyme
       - sample_processing_protocol
       - checksum
       - coll_date
@@ -2456,7 +2461,10 @@ classes:
       ion_source:
         rank: 1
         slot_group: Technical Metadata
-      post_source_component:
+      digestion_method:
+        rank: 1
+        slot_group: Technical Metadata
+      digestion_enzyme:
         rank: 1
         slot_group: Technical Metadata
       sample_processing_protocol:
