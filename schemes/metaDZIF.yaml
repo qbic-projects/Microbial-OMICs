@@ -2303,6 +2303,7 @@ classes:
       - sample_label
       - project_title
       - project_description
+      - LC_column
       - instrument
       - modifications
       - ion_source
@@ -2350,6 +2351,9 @@ classes:
         rank: 1
         slot_group: Technical Metadata
       project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      LC_column:
         rank: 1
         slot_group: Technical Metadata
       instrument:
@@ -2477,6 +2481,7 @@ classes:
       - sample_label
       - project_title
       - project_description
+      - LC_column
       - instrument
       - modifications
       - ion_source
@@ -2515,6 +2520,9 @@ classes:
         rank: 1
         slot_group: Technical Metadata
       project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      LC_column:
         rank: 1
         slot_group: Technical Metadata
       instrument:
@@ -2678,7 +2686,7 @@ slots:
     description: >-
       Tool(s) used, version and parameters.
     comments:
-      Seperate several Tools by a semicolon (;).
+      Separate several Tools by a semicolon (;).
     required: true
     examples:
       - value: Unicycler v3.0
@@ -2999,12 +3007,12 @@ slots:
     title: Host name
     description: >-
       A scientific name is a name given through scientific nomenclature.
-    comments: "Use the scientific name of the host. DO NOT PROVIDE THE NAME OF A HUMAN BEING!"
+    comments: "Use the scientific name of the host. DO NOT PROVIDE THE NAME OF A HUMAN BEING! For addition of more organisms reach out to jannik.seidel@qbic.uni-tuebingen.de"
     required: true
     range: host name enum
     examples:
-      - value: Mus musculus
-      - value: Rattus norvegicus
+      - value: 'Mus musculus [NCBITaxon:10090]'
+      - value: 'Rattus norvegicus [NCBITaxon:10116]'
     exact_mappings:
       - SIO:000120
 # Version: 1.59
@@ -3085,6 +3093,16 @@ slots:
     exact_mappings:
       - SIO:000319
 # Version: 1.59
+
+  LC_column:
+    title: LC column
+    description: >-
+      The type of chromatographic column that has been used.
+    comments: You can use the commercial name or brand.
+    required: true
+    examples:
+      - value: Bruker PepSep™ MAX HT
+    range: WhitespaceMinimizedString
 
   lib_layout:
     title: Library layout
@@ -3846,49 +3864,49 @@ enums:
       not applicable:
         description: >- 
           The sample was not collected from a host.
-      Homo sapiens:
+      'Homo sapiens [NCBITaxon:9606]':
         description: >-
           Homo sapiens
-      Mus musculus:
+      'Mus musculus [NCBITaxon:10090]':
         description: >-
           Mus musculus
-      Rattus norvegicus:
+      'Rattus norvegicus [NCBITaxon:10116]':
         description: >-
           Rattus norvegicus
-      Oryctolagus cuniculus:
+      'Oryctolagus cuniculus [NCBITaxon:9986]':
         description: >-
           Oryctolagus cuniculus
-      Cavia porcellus:
+      'Cavia porcellus [NCBITaxon:10141]':
         description: >-
           Cavia porcellus
-      Mesocricetus auratus:
+      'Mesocricetus auratus [NCBITaxon:10036]':
         description: >-
           Mesocricetus auratus
-      Chinchilla lanigera:
+      'Chinchilla lanigera [NCBITaxon:34839]':
         description: >-
           Chinchilla lanigera
-      Chinchilla chinchilla:
+      'Chinchilla chinchilla [NCBITaxon:10152]':
         description: >-
           Chinchilla chinchilla
-      Meriones unguiculatus:
+      'Meriones unguiculatus [NCBITaxon:10047]':
         description: >-
           Meriones unguiculatus
-      Dasypus novemcinctus:
+      'Dasypus novemcinctus [NCBITaxon:9361]':
         description: >-
           Dasypus novemcinctus
-      Danio rerio:
+      'Danio rerio [NCBITaxon:7955]':
         description: >-
           Danio rerio
-      Xenopus laevis:
+      'Xenopus laevis [NCBITaxon:8355]':
         description: >-
           Xenopus laevis
-      Xenopus tropicalis:
+      'Xenopus tropicalis [NCBITaxon:8364]':
         description: >-
           Xenopus tropicalis
-      Rana catesbeiana:
+      'Aquarana catesbeiana [NCBITaxon:8400]':
         description: >-
-          Rana catesbeiana
-      Ambystoma mexicanum:
+          Aquarana catesbeiana
+      'Ambystoma mexicanum [NCBITaxon:8296]':
         description: >-
           Ambystoma mexicanum
 
