@@ -3861,9 +3861,6 @@ enums:
     description: >-
       The scientific name of the host of the microbes.
     permissible_values:
-      not applicable:
-        description: >- 
-          The sample was not collected from a host.
       'Homo sapiens [NCBITaxon:9606]':
         description: >-
           Homo sapiens
