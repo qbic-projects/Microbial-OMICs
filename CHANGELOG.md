@@ -5,6 +5,7 @@
 ### `Added`
 - NGS-based metadata schemes
 - Proteomics metadata schemes
+- Metabolomics metadata schemes
 - Scripts for automatic building of the DZIF DataHarmonizer from the LinkML scheme (which is also automatically populated with controlled vocabularies from ontologies downloaded from the internet)
 - License for the schemes
 
