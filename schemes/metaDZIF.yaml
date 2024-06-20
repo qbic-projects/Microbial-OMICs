@@ -68,7 +68,6 @@ classes:
       - comment
       - provenance
     slot_usage:
-
       sample_label:
         rank: 1
         slot_group: Technical Metadata
