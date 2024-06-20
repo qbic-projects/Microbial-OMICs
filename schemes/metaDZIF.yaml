@@ -3949,10 +3949,10 @@ enums:
     permissible_values:
       genomic:
         description: >-
-          The library originates from a single organism and genetic material.
+          The library originates from a single organism and DNA.
       metagenomic:
         description: >-
-          The library originates from a community of organisms and genetic material.
+          The library originates from a community of organisms and DNA.
       transcriptomic:
         description: >-
           The library originates from a single organism and RNA.
