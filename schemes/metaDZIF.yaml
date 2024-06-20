@@ -2297,9 +2297,10 @@ classes:
         slot_group: Provenance
 
   Microbial-Proteomic-Raw-Data-isolated-from-Non-human-Host:
-    # TODO: Everything - Environmental and biological Metadata finished
+    # TODO
     is_a: dh_interface
     slots:
+      - sample_label
       - project_title
       - project_description
       - LC_column
@@ -2343,6 +2344,9 @@ classes:
       - comment
       - provenance
     slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
       project_title:
         rank: 1
         slot_group: Technical Metadata
@@ -2474,6 +2478,7 @@ classes:
     # TODO
     is_a: dh_interface
     slots:
+      - sample_label
       - project_title
       - project_description
       - LC_column
@@ -2508,6 +2513,9 @@ classes:
       - comment
       - provenance
     slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
       project_title:
         rank: 1
         slot_group: Technical Metadata
@@ -2611,10 +2619,314 @@ classes:
   Microbial-Metabolomic-Raw-Data-isolated-from-Non-human-Host:
     # TODO
     is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - sample_type
+      - instrument
+      - sample_collection_protocol
+      - extraction_protocol
+      - chromatography_protocol
+      - mass_spectrometry_protocol
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_type:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_collection_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      extraction_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      chromatography_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      mass_spectrometry_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
   Microbial-Metabolomic-Raw-Data-isolated-from-Human-Host:
     # TODO
     is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - sample_type
+      - instrument
+      - sample_collection_protocol
+      - extraction_protocol
+      - chromatography_protocol
+      - mass_spectrometry_protocol
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_type:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_collection_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      extraction_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      chromatography_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      mass_spectrometry_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
 
 slots:
   age:
@@ -2930,6 +3242,18 @@ slots:
       - SIO:001014
 # Version: 1.59
 
+  extraction_protocol:
+    title: Extraction protocol
+    description: >-
+      Protocol of metabolite extraction steps before analysis including control samples.
+    comments:
+
+    range: WhitespaceMinimizedString
+    required: true
+    examples:
+    #TODO
+      - value: 
+
   facility:
     title: Facility
     description: >-
@@ -3179,6 +3503,18 @@ slots:
       - SIO:000318
 # Version: 1.59
 
+  mass_spectrometry_protocol:
+    title: Mass spectrometry protocol
+    description: >-
+      Description of instrument, ion source, ionisation mode, mz range and settings.
+    comments:
+
+    range: WhitespaceMinimizedString
+    required: true
+    examples:
+    #TODO
+      - value: 
+
   mat_conditions:
     title: Material conditions
     description: >-
@@ -3375,6 +3711,18 @@ slots:
       - value: "ENA: ERR2193251"
     range: WhitespaceMinimizedString
 
+  sample_collection_protocol:
+    title: Sample collection protocol
+    description: >-
+      Description of sampling procedure, origin of sample, time point of collection, storage, etc.
+    comments:
+
+    range: WhitespaceMinimizedString
+    required: true
+    examples:
+    #TODO
+      - value: 
+
   sample_label:
     title: Sample label
     description: >-
@@ -3441,6 +3789,14 @@ slots:
     comments: Take the values either from the UBERON Ontology (UBERON:0001062)  or from the ENVO Ontology (ENVO:00000428). Terms in brackets are superterms. Use terms which are subterms of the one entered at sample site or feature.
     recommended: true
     range: sample site enum
+
+  sample_type:
+    title: Sample type
+    description: >-
+      Whether the sample was experimental/blank/control/qc.
+    comments:
+    required: true
+    range: sample type enum
 
   seq_meth:
     title: Sequencing method
@@ -4034,6 +4390,22 @@ enums:
       None:
         description: >-
           No removal/depletion of rRNA reads.
+
+  sample type enum:
+    description: >-
+
+    permissible_values:
+      experimental:
+        description: >-
+
+      blank:
+        description: >-
+
+      control:
+        description: >-
+
+      qc:
+        description: >-
 
   seq meth enum:
 # https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#instrument
