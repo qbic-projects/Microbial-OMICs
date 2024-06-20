@@ -2300,7 +2300,6 @@ classes:
     # TODO: Everything - Environmental and biological Metadata finished
     is_a: dh_interface
     slots:
-      - sample_label
       - project_title
       - project_description
       - LC_column
@@ -2344,9 +2343,6 @@ classes:
       - comment
       - provenance
     slot_usage:
-      sample_label:
-        rank: 1
-        slot_group: Technical Metadata
       project_title:
         rank: 1
         slot_group: Technical Metadata
@@ -2478,7 +2474,6 @@ classes:
     # TODO
     is_a: dh_interface
     slots:
-      - sample_label
       - project_title
       - project_description
       - LC_column
@@ -2513,9 +2508,6 @@ classes:
       - comment
       - provenance
     slot_usage:
-      sample_label:
-        rank: 1
-        slot_group: Technical Metadata
       project_title:
         rank: 1
         slot_group: Technical Metadata
@@ -2736,6 +2728,18 @@ slots:
     exact_mappings:
       - SIO:001399
 # Version: 1.59
+
+  chromatography_protocol:
+    title: Chromatography protocol
+    description: >-
+      Description of instrument and column, mobile phase and gradient as well a settings used
+    comments:
+
+    required: true
+    range: WhitespaceMinimizedString
+    examples:
+    #TODO
+      - value:
 
   city:
     title: City
