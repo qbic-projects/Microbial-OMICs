@@ -1,0 +1,4686 @@
+id: https://w3id.org/metaMicrobialOMICs
+name: metaMicrobialOMICs
+description: >-
+  The metadata models for the DZIF microbial OMICS Database
+version: 1.0.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  # Ontologies for Controlled Vocabularies and definition of slots (OBI)
+#<prefixes controlled vocabularies>
+  ROR: https://ror.org/
+  # Ontologies for definitions of the slots
+  ENSGLOSSARY: http://ensembl.org/glossary/ENSGLOSSARY_
+  SIO: http://semanticscience.org/resource/SIO_
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  PATO: http://purl.obolibrary.org/obo/PATO_
+  XCO: http://purl.obolibrary.org/obo/XCO_
+  SO: http://purl.obolibrary.org/obo/SO_
+  ARO: http://purl.obolibrary.org/obo/ARO_
+  GSSO: http://purl.obolibrary.org/obo/GSSO_
+  GENEPIO: http://purl.obolibrary.org/obo/GENEPIO_
+
+imports:
+  - linkml:types
+
+default_range: string
+
+classes:
+  dh_interface:
+    name: dh_interface
+    description: A DataHarmonizer interface
+    from_schema: https://example.com/metaDZIF
+
+  Microbial-Genomic-Raw-Data-isolated-from-Environment:
+    title: Environmental Genomic Raw Data
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      run_ref:
+        rank: 4
+        slot_group: Link
+      biosample:
+        rank: 4
+        slot_group: Link
+      QBiCCode:
+        rank: 5
+        slot_group: Accession
+      comment:
+        rank: 6
+        slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
+
+  Microbial-Genomic-Raw-Data-isolated-from-Non-human-Host:
+    title: Genomic raw data from a non-human host
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Genomic-Raw-Data-isolated-from-Human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Genomic-Assemblies-isolated-from-Environment:
+    is_a: dh_interface
+    slots:
+      - run_ref
+      - sample_label
+      - assembly_qual
+      - assembly_software
+      - coverage
+      - number_contig
+      - n50
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - biosample
+      - comment
+      - provenance
+    slot_usage:
+      run_ref:
+        rank: 1
+        slot_group: Accession
+      sample_label:
+        rank: 2
+        slot_group: Technical Metadata
+      assembly_qual:
+        rank: 2
+        slot_group: Technical Metadata
+      assembly_software:
+        rank: 2
+        slot_group: Technical Metadata
+      coverage:
+        rank: 2
+        slot_group: Technical Metadata
+      number_contig:
+        rank: 2
+        slot_group: Technical Metadata
+      n50:
+        rank: 2
+        slot_group: Technical Metadata
+      checksum:
+        rank: 2
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 3
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 3
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 3
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 3
+        slot_group: Environmental Metadata
+      state:
+        rank: 3
+        slot_group: Environmental Metadata
+      city:
+        rank: 3
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 3
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 3
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 3
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 3
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 4
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 4
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 4
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 4
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 4
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 4
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 4
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 4
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 4
+        slot_group: Biological Metadata
+      biosample:
+        rank: 5
+        slot_group: Link
+      comment:
+        rank: 6
+        slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
+
+  Microbial-Genomic-Assemblies-isolated-from-Non-human-Host:
+    #is_a: dh_interface
+    slots:
+      - run_ref
+      - sample_label
+      - assembly_qual
+      - assembly_software
+      - coverage
+      - number_contig
+      - n50
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - biosample
+      - comment
+      - provenance
+    slot_usage:
+      run_ref:
+        rank: 1
+        slot_group: Accession
+      sample_label:
+        rank: 2
+        slot_group: Technical Metadata
+      assembly_qual:
+        rank: 2
+        slot_group: Technical Metadata
+      assembly_software:
+        rank: 2
+        slot_group: Technical Metadata
+      coverage:
+        rank: 2
+        slot_group: Technical Metadata
+      number_contig:
+        rank: 2
+        slot_group: Technical Metadata
+      n50:
+        rank: 2
+        slot_group: Technical Metadata
+      checksum:
+        rank: 2
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 3
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 3
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 3
+        slot_group: Environmental Metadata
+      facility:
+        rank: 3
+        slot_group: Environmental Metadata
+      country:
+        rank: 3
+        slot_group: Environmental Metadata
+      state:
+        rank: 3
+        slot_group: Environmental Metadata
+      city:
+        rank: 3
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 3
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 3
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 3
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 3
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 4
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 4
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 4
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 4
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 4
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 4
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 4
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 4
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 4
+        slot_group: Biological Metadata
+      host_name:
+        rank: 5
+        slot_group: Host Metadata
+      host_length:
+        rank: 5
+        slot_group: Host Metadata
+      host_weight:
+        rank: 5
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 5
+        slot_group: Host Metadata
+      age:
+        rank: 5
+        slot_group: Host Metadata
+      sex:
+        rank: 5
+        slot_group: Host Metadata
+      host_diet:
+        rank: 5
+        slot_group: Host Metadata
+      habitat:
+        rank: 5
+        slot_group: Host Metadata
+      disorders:
+        rank: 5
+        slot_group: Host Metadata
+      biosample:
+        rank: 6
+        slot_group: Link
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Metagenomic-Raw-Data-isolated-from-Environment:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      run_ref:
+        rank: 4
+        slot_group: Link
+      biosample:
+        rank: 4
+        slot_group: Link
+      QBiCCode:
+        rank: 5
+        slot_group: Accession
+      comment:
+        rank: 6
+        slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
+
+  Microbial-Metagenomic-Raw-Data-isolated-from-Non-human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Metagenomic-Raw-Data-isolated-from-Human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Amplicon-Raw-Data-isolated-from-Environment:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - target_gene
+      - pcr_primers
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      target_gene:
+        rank: 1
+        slot_group: Technical Metadata
+      pcr_primers:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      run_ref:
+        rank: 4
+        slot_group: Link
+      biosample:
+        rank: 4
+        slot_group: Link
+      QBiCCode:
+        rank: 5
+        slot_group: Accession
+      comment:
+        rank: 6
+        slot_group: Comment
+      provenance:
+        rank: 7
+        slot_group: Provenance
+
+  Microbial-Amplicon-Raw-Data-isolated-from-Non-human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - target_gene
+      - pcr_primers
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      target_gene:
+        rank: 1
+        slot_group: Technical Metadata
+      pcr_primers:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Amplicon-Raw-Data-isolated-from-Human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - target_gene
+      - pcr_primers
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      target_gene:
+        rank: 1
+        slot_group: Technical Metadata
+      pcr_primers:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Transcriptomic-Raw-Data-isolated-from-Non-human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - rrna_treatment
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      rrna_treatment:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Transcriptomic-Raw-Data-isolated-from-Human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - rrna_treatment
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      rrna_treatment:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Metatranscriptomic-Raw-Data-isolated-from-Non-human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - rrna_treatment
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      rrna_treatment:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Metatranscriptomic-Raw-Data-isolated-from-Human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - seq_meth
+      - lib_layout
+      - lib_source
+      - lib_strategy
+      - lib_selection
+      - nuc_acid_extr_meth
+      - rrna_treatment
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - run_ref
+      - biosample
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      seq_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_layout:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_source:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_strategy:
+        rank: 1
+        slot_group: Technical Metadata
+      lib_selection:
+        rank: 1
+        slot_group: Technical Metadata
+      nuc_acid_extr_meth:
+        rank: 1
+        slot_group: Technical Metadata
+      rrna_treatment:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      run_ref:
+        rank: 5
+        slot_group: Link
+      biosample:
+        rank: 5
+        slot_group: Link
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Proteomic-Raw-Data-isolated-from-Non-human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - LC_column
+      - instrument
+      - modifications
+      - ion_source
+      - digestion_method
+      - digestion_enzyme
+      - sample_processing_protocol
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      LC_column:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      modifications:
+        rank: 1
+        slot_group: Technical Metadata
+      ion_source:
+        rank: 1
+        slot_group: Technical Metadata
+      digestion_method:
+        rank: 1
+        slot_group: Technical Metadata
+      digestion_enzyme:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_processing_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Proteomic-Raw-Data-isolated-from-Human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - LC_column
+      - instrument
+      - modifications
+      - ion_source
+      - digestion_method
+      - digestion_enzyme
+      - sample_processing_protocol
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      LC_column:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      modifications:
+        rank: 1
+        slot_group: Technical Metadata
+      ion_source:
+        rank: 1
+        slot_group: Technical Metadata
+      digestion_method:
+        rank: 1
+        slot_group: Technical Metadata
+      digestion_enzyme:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_processing_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Metabolomic-Raw-Data-isolated-from-Non-human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - sample_type
+      - instrument
+      - sample_collection_protocol
+      - extraction_protocol
+      - chromatography_protocol
+      - mass_spectrometry_protocol
+      - checksum
+      - coll_date
+      - coll_time
+      - coll_by
+      - facility
+      - country
+      - state
+      - city
+      - latitude
+      - longitude
+      - elevation
+      - altitude_geo_depth
+      - sample_site_feat
+      - sample_sub_site_feat
+      - sample_material
+      - sample_size_mass
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_length
+      - host_weight
+      - host_spec_sample_depth
+      - age
+      - sex
+      - host_diet
+      - habitat
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_type:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_collection_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      extraction_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      chromatography_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      mass_spectrometry_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_time:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      city:
+        rank: 2
+        slot_group: Environmental Metadata
+      latitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      longitude:
+        rank: 2
+        slot_group: Environmental Metadata
+      elevation:
+        rank: 2
+        slot_group: Environmental Metadata
+      altitude_geo_depth:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_sub_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_size_mass:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_length:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      host_spec_sample_depth:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      habitat:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+  Microbial-Metabolomic-Raw-Data-isolated-from-Human-Host:
+    is_a: dh_interface
+    slots:
+      - sample_label
+      - project_title
+      - project_description
+      - sample_type
+      - instrument
+      - sample_collection_protocol
+      - extraction_protocol
+      - chromatography_protocol
+      - mass_spectrometry_protocol
+      - checksum
+      - coll_date
+      - coll_by
+      - facility
+      - country
+      - state
+      - sample_site_feat
+      - sample_material
+      - site_conditions
+      - mat_conditions
+      - microbial_id
+      - culture_substrate
+      - chemical_exposure
+      - host_name
+      - host_height
+      - host_weight
+      - age
+      - sex
+      - host_diet
+      - phenotyp_amr
+      - disorders
+      - QBiCCode
+      - comment
+      - provenance
+    slot_usage:
+      sample_label:
+        rank: 1
+        slot_group: Technical Metadata
+      project_title:
+        rank: 1
+        slot_group: Technical Metadata
+      project_description:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_type:
+        rank: 1
+        slot_group: Technical Metadata
+      instrument:
+        rank: 1
+        slot_group: Technical Metadata
+      sample_collection_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      extraction_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      chromatography_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      mass_spectrometry_protocol:
+        rank: 1
+        slot_group: Technical Metadata
+      checksum:
+        rank: 1
+        slot_group: Technical Metadata
+      coll_date:
+        rank: 2
+        slot_group: Environmental Metadata
+      coll_by:
+        rank: 2
+        slot_group: Environmental Metadata
+      facility:
+        rank: 2
+        slot_group: Environmental Metadata
+      country:
+        rank: 2
+        slot_group: Environmental Metadata
+      state:
+        rank: 2
+        slot_group: Environmental Metadata
+      sample_site_feat:
+        rank: 3
+        slot_group: Biological Metadata
+      sample_material:
+        rank: 3
+        slot_group: Biological Metadata
+      site_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      mat_conditions:
+        rank: 3
+        slot_group: Biological Metadata
+      microbial_id:
+        rank: 3
+        slot_group: Biological Metadata
+      culture_substrate:
+        rank: 3
+        slot_group: Biological Metadata
+      chemical_exposure:
+        rank: 3
+        slot_group: Biological Metadata
+      host_name:
+        rank: 4
+        slot_group: Host Metadata
+      host_height:
+        rank: 4
+        slot_group: Host Metadata
+      host_weight:
+        rank: 4
+        slot_group: Host Metadata
+      age:
+        rank: 4
+        slot_group: Host Metadata
+      sex:
+        rank: 4
+        slot_group: Host Metadata
+      host_diet:
+        rank: 4
+        slot_group: Host Metadata
+      phenotyp_amr:
+        rank: 4
+        slot_group: Host Metadata
+      disorders:
+        rank: 4
+        slot_group: Host Metadata
+      QBiCCode:
+        rank: 6
+        slot_group: Accession
+      comment:
+        rank: 7
+        slot_group: Comment
+      provenance:
+        rank: 8
+        slot_group: Provenance
+
+slots:
+  age:
+    name: age
+    title: Age
+    description: >-
+      Age is the length of time that a person has lived or a thing has existed.
+    comments:
+      "The age of the host either in hours (xx h), days (xx d), months (xxx m) or years (xxx y).
+      Use only the provided formats."
+    examples:
+      - value: 42 h
+      - value: 24 d
+      - value: 13 m
+      - value: 78 y
+    pattern: (^[0-9]{1,3} h$|^[0-9]{1,3} d$|^[0-9]{1,3} m$|^[0-9]{1,3} y$)
+    required: true
+    exact_mappings:
+      - SIO:001013
+# Version: 1.59
+    range: WhitespaceMinimizedString
+
+  altitude_geo_depth:
+    title: Altitude or geographic depth
+    description: >-
+      Altitude is a distance above sea level.
+      Geographic depth is a distance below sea level.
+    comments: In meters. Can have up to 3 places after the point.
+    pattern: "(^[+/-]?[0-9]{1,4}|^[+/-]?[0-9]{1,3}[.][0-9]{1,3}$|^[+/-]?[0-9][0-9]{1,3}[.][0-9]{1,3}$)"
+    recommended: true
+    examples:
+      - value: 123.456
+      - value: -1401
+    exact_mappings:
+      - SIO:000438
+# Version: 1.59
+    range: WhitespaceMinimizedString
+
+  analysis_to_be_performed:
+    title: Analysis to be performed
+    description: >-
+      Analysis to be performed, e.g. ampliseq, mag, taxprofiler, bacass, funcscan, rnaseq
+    comments:
+    examples:
+      - value: ampliseq
+    range: analysis to be performed enum
+    multivalued: true
+
+  assembly_qual:
+    title: Assembly quality
+    description: >-
+      Assembly quality category
+    comments:
+    examples:
+      - value: medium quality assembly
+    range: assembly quality enum
+    required: true
+
+  assembly_software:
+    title: Assembly software
+    description: >-
+      Tool(s) used, version and parameters.
+    comments:
+      Separate several Tools by a semicolon (;).
+    required: true
+    examples:
+      - value: Unicycler v3.0
+      - value: SPAdes v3.12.1
+      - value: SPAdes v3.12.1 --meta --careful --k 21,33,55
+    range: WhitespaceMinimizedString
+
+  biosample:
+    title: Biosample
+    description: >-
+      A reference to the Biosample repository of ENA or NCBI.
+    comments:
+    pattern: ^SAM[NEDAG][0-9]{1,}$
+    range: WhitespaceMinimizedString
+
+  checksum:
+    title: Checksum
+    description: >-
+      A computed value which depends on the contents of a block of data and which is transmitted or stored
+      along with the data in order to detect corruption of the data. The receiving system recomputes the
+      checksum based upon the received data and compares this value with the one sent with the data. If
+      the two values are the same, the receiver has some confidence that the data was received correctly.
+    comments: "Use MD5 or SHA256 and the following format: 
+      algorithm: checksum. For more than one file (e.g. for paired end sequencing) use the following format
+      algorithm: checksum1; algorithm: checksum2"
+    required: true
+    examples:
+      - value: 'MD5: 098f6bcd4621d373cade4e832627b4f6'
+      - value: 'MD5: 5a105e8b9d40e1329780d62ea2265d8a; MD5: ad0234829205b9033196ba818f7a872b'
+    range: WhitespaceMinimizedString
+    pattern: '^MD5: [0-9a-fA-F]{32}$|^SHA256: [0-9a-fA-F]{64}$|^MD5: [0-9a-fA-F]{32}; MD5: [0-9a-fA-F]{32}$|^SHA256: [0-9a-fA-F]{64}; SHA256: [0-9a-fA-F]{64}$'
+    exact_mappings:
+      - NCIT:C43522
+# Version: 22.07d
+
+  chemical_exposure:
+    title: Chemical exposure
+    description: >-
+      Chemical exposure is a process to expose one or more individuals to a chemical substance.
+    comments:
+      'Use the ChEBI Ontology (https://www.ebi.ac.uk/chebi/) to look up terms.'
+    recommended: true
+    range: WhitespaceMinimizedString
+    pattern: '^([^\[\];]+ \[CHEBI:\d+\](;[^\[\];]+ \[CHEBI:\d+\])*)?$'
+    examples:
+      - value: glyphosate [CHEBI:27744];caffeine [CHEBI:27732]
+    exact_mappings:
+      - SIO:001399
+# Version: 1.59
+
+  chromatography_protocol:
+    title: Chromatography protocol
+    description: >-
+      Description of instrument and column, mobile phase and gradient as well a settings used.
+    comments:
+
+    required: true
+    range: WhitespaceMinimizedString
+    examples:
+      - value: 'Chromatographic separation was performed on a 3.0 mm x 10 cm Poroshell120 HPHC18 column with 1.9 µM particle size (Agilent Technologies) mounted on Agilent 1290 Infinity II LC system coupled to a 6550 iFunnel qToF mass spectrometer. The column temperature was maintained at 45 °C. The mobile phase was composed of A: water with 0.1% formic acid and B: methanol with 0.1% formic acid. In total 5 μL of each sample were injected at 0.6 mL/min flow rate starting from 5% mobile phase B followed by a linear gradient to 95% over 5.5 min. The column was allowed to re-equilibrate with starting conditions for 1.1 min before each sample injection.'
+
+  city:
+    title: City
+    description: >-
+      A city is a relatively large and permanent settlement.
+    comments:
+      Use the closest nearby city or geographic location where the sample was collected.
+    recommended: true
+    examples:
+      - value: Tuebingen
+      - value: Munich
+      - value: Berlin
+    exact_mappings:
+      - SIO:000665
+# Version: 1.59
+    range: WhitespaceMinimizedString
+
+  coll_by:
+    title: Collected by
+    description: >-
+      Institution that collected the data.
+    comments: Do NOT provide a persons name!
+    required: true
+    examples:
+      - value: Quantitative Biology Center, https://ror.org/00v34f693
+    range: collected by enum
+
+  coll_date:
+    title: Collection Date
+    description: >-
+      The date on which the sample or data was collected.
+    comments: "Insert the date in the following schema: YYYY-MM-DD, if not collected insert 'not collected', if not provided use 'not provided'"
+    required: true
+    examples:
+      - value: not collected
+      - value: not provided
+      - value: missing
+      - value: "2023-04-28"
+    exact_mappings:
+      - NCIT:C81286
+# Version: 23.09d
+    any_of: 
+      - range: null value date enum
+      - range: date
+
+  coll_time:
+    title: Collection time
+    description: >-
+      The hour, minute, and/or second at which the sample or data was collected.
+    comments:
+      "Insert the time in the following schema: hh:mm:ss±hh:mm
+      ±hh:mm stands for time zone (UTC±hours:minutes), if not collected insert 'not collected', if not provided use 'not provided'"
+    pattern: ([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]([+-]([01][0-9]|2[0-3]):[0-5][0-9])?$|(^not collected$)|(^not provided$)
+    required: true
+    examples:
+      - value: not collected
+      - value: not provided
+      - value: "14:00:00+02:00"
+    exact_mappings:
+      - NCIT:C81287
+# Version: 23.09d
+    range: WhitespaceMinimizedString
+
+  comment:
+    title: Comment
+    description: >-
+      A comment is a verbal or written remark often related to an added piece of information, or an observation or statement.
+    comments: Should contain any information which does not fit in the other fields. 
+      Do NOT provide patient sensitive data!
+    recommended: true
+    pattern: "^.{1,}$"
+    exact_mappings:
+      - SIO:00167
+# Version: 1.59
+    range: WhitespaceMinimizedString
+
+  country:
+    title: Country
+    description: >-
+      A country is a region legally identified as a distinct entity in political geography. 
+    comments:
+      Insert the country the sample was collected in.
+      So far, only european countries are supported for validation. Other countries can be added on demand (reach out to jannik.seidel@qbic.uni-tuebingen.de).
+    range: country enum
+    required: true
+    examples:
+      - value: Germany
+      - value: France
+      - value: Switzerland
+    exact_mappings:
+      - SIO:000664
+# Version: 1.59
+
+  coverage:
+    title: Coverage
+    description: >-
+      Refers to the number of overlapping sequences used to build a region of the assembly.
+      High coverage indicates a good amount of sequence information while low coverage reflects a
+      low amount of sequence information.
+    comments: In x (times).
+    pattern: "(^[0-9]{1,}x$|^[0-9]{1,}[.][0-9]{1,}x$)"
+    required: true
+    examples:
+      - value: 100x
+      - value: 123.5x
+    exact_mappings:
+      - ENSGLOSSARY:0000185
+# Version: 2023-01-04
+    range: WhitespaceMinimizedString
+
+  culture_substrate:
+# TODO: Derive this from https://ontobee.org/ontology/MCO?iri=http://purl.obolibrary.org/obo/OBI_0000079, values should be 
+    title: Culture substrate
+    description: >-
+      A mixture of chemicals used by the microorganism to feed on.
+    comments: "Use 'not applicable' if not from a microbial isolate."
+    required: true
+    pattern: "(^not applicable$|^.{1,}$)"
+    examples:
+      - value: not applicable
+      - value: LB-Medium
+    range: WhitespaceMinimizedString
+
+  digestion_enzyme:
+    title: Digestion enzyme
+    description: >-
+      Information about the used enzymes for the proteolysis.
+    comments:
+    range: WhitespaceMinimizedString
+    required: true
+
+  digestion_method:
+    title: Digestion method
+    description: >-
+      A technique for proteolysis of proteins into peptides by treatment with any of various enzymes.
+    comments:
+    range: digestion method enum
+    required: true
+    exact_mappings:
+      - NCIT:C70845
+# Version: 24.04e
+
+  disorders:
+    title: Disorders
+    description: >-
+      Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the
+      person affected or those in contact with the person. The term is often used broadly to include
+      injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure
+      and function.
+    comments: "Use 'not collected' if not collected. Use 'not provided' if not provided."
+    multivalued: true
+    range: disorder enum
+    required: true
+    exact_mappings:
+      - NCIT:C2991
+# Version: 22.07d
+
+  elevation:
+    title: Elevation
+    description: >-
+      A positional quality inhering in a bearer by virtue of the bearer's vertical distance of a point
+      above or below a reference surface.
+    comments: Can have negative values if the sample was taken below reference surface. Reference surface can be ground surface, water surface, river bed surface, etc.
+    recommended: true
+    examples:
+      - value: 10 m
+      - value: -10 m
+      - value: -50 cm
+      - value: 1 km
+    pattern: ^[+/-]?([0-9]{1,3}( m| cm| km))$
+    exact_mappings:
+      - PATO:0001687
+# Version: 2023-05-18
+    range: WhitespaceMinimizedString
+
+  ethnicity:
+    title: Ethnicity
+    description: >-
+      Ethnicity is the biological quality of membership in a social group based on a common heritage.
+    comments: Can have several values if host has ancestors from different ethnicities.
+    recommended: true
+    range: ethnicity enum
+    multivalued: true
+    examples:
+      - value: african
+      - value: caucasian; asian
+    exact_mappings:
+      - SIO:001014
+# Version: 1.59
+
+  extraction_protocol:
+    title: Extraction protocol
+    description: >-
+      Protocol of metabolite extraction steps before analysis including control samples.
+    comments:
+
+    range: WhitespaceMinimizedString
+    required: true
+    examples:
+      - value: 'Feces (100 mg) of mice were individually grounded with liquid nitrogen and the homogenate was resuspended with prechilled 80% methanol by well vortex. The samples were incubated on ice for 5 min and then were centrifuged at 15,000 x g, 4 °C for 20 min. Some of supernatant was diluted to final concentration containing 53% methanol by LC-MS grade water. The samples were subsequently transferred to a fresh Eppendorf tube and then were centrifuged at 15,000 x g, 4 °C for 20 min. Finally, the supernatant was injected into the LC-MS/MS system analysis.'
+
+  facility:
+    title: Facility
+    description: >-
+      The facilities name within the organisation (see Collected by for the organisation); e.g. group name. 
+    comments: 
+    required: true
+    examples:
+      - value: Computational Microbiology Bridge Group
+    range: WhitespaceMinimizedString
+
+  ghga:
+    title: GHGA
+    description: >-
+      Link to the German Human Genome-Phenome Archive(GHGA).
+    comments:
+    range: WhitespaceMinimizedString
+
+  habitat:
+    title: Habitat
+    description: >-
+      An environmental system which can sustain and allow the growth of an ecological population.
+    comments: "Free text to describe the habitat of the host."
+    recommended: true
+    examples:
+      - value: rural
+      - value: laboratory
+      - value: suburban
+      - value: urban
+    exact_mappings:
+      - ENVO:01000739
+# Version: 2021-05-14 
+    range: WhitespaceMinimizedString
+
+  host_diet:
+    title: Host diet
+    description: >-
+      The food and drink consumed by an organism day to day. 
+    comments: 
+    required: true
+    multivalued: true
+    range: host diet enum
+    exact_mappings:
+      - XCO:0000013
+# Version: 18-12-2019
+
+  host_height:
+    title: Host height
+    description: >-
+      The vertical measurement or distance from the base to the top of an object;
+      the vertical dimension of extension.
+    comments: "Height of host. To be filled with a value in cm."
+    required: true
+    pattern: (^not provided$|^[0-9]{1,4} cm$)
+    examples:
+      - value: not provided
+      - value: 28 cm
+    exact_mappings:
+      - NCIT:C25347
+# Version: 22.07d
+    range: WhitespaceMinimizedString
+
+  host_length:
+    title: Host length
+    description: >-
+      The linear extent in space from one end of something to the other end, or the extent of something from beginning to end.
+    comments: "Length of host. To be filled with a value in cm."
+    required: true
+    pattern: (^not provided$|^[0-9]{1,4} cm$)
+    examples:
+      - value: not provided
+      - value: 28 cm
+    exact_mappings:
+      - NCIT:C25334
+# Version: 23.09d
+    range: WhitespaceMinimizedString
+
+
+  host_name:
+    title: Host name
+    description: >-
+      A scientific name is a name given through scientific nomenclature.
+    comments: "Use the scientific name of the host. DO NOT PROVIDE THE NAME OF A HUMAN BEING! For addition of more organisms reach out to jannik.seidel@qbic.uni-tuebingen.de"
+    required: true
+    range: host name enum
+    examples:
+      - value: 'Mus musculus [NCBITaxon:10090]'
+      - value: 'Rattus norvegicus [NCBITaxon:10116]'
+    exact_mappings:
+      - SIO:000120
+# Version: 1.59
+
+  host_spec_sample_depth:
+    title: Host specific sample depth
+    description: >-
+      The depth of the sample collection site in the host. 
+    comments: "Can be 'not applicable' if not applicable. 
+      Use the format number unit."
+    recommended: true
+    pattern: "(^not applicable$|^[0-9]{1,3} cm$|^[0-9]{1,4} mm$)"
+    examples:
+      - value: not applicable
+      - value: 9 mm
+    range: WhitespaceMinimizedString    
+
+# Host -> weight, sample -> mass
+# Taken from the MDR Version 28.03.2023
+  host_weight:
+    title: Host weight
+    description: >-
+      Weight is the amount or quantity or unit of heaviness or mass; amount a thing weighs.
+      (Source: https://www.dictionary.com/browse/weight)
+    comments: "Weight in kg. Provide with max. 3 places after the comma. Does not have to be that precise if
+      not needed."
+    required: true
+    pattern: "(^not provided$|^[1-9][0-9]{0,3} kg$|^[1-9][0-9]{0,3}[.][0-9]{1,3} kg$|^[0-9][.][0-9]{1,3} kg$)"
+    examples:
+      - value: not provided
+      - value: 74 kg
+    range: WhitespaceMinimizedString
+
+  instrument:
+    title: Instrument
+    description: >-
+      Description of the instrument or the mass spectrometer.
+    comments:
+    required: true
+    examples:
+      - value: TSQ
+      - value: BioTOF III
+      - value: 4800 Proteomics Analyzer
+    range: instrument enum
+    exact_mappings:
+      - MS:1000463
+# Version: 4.1.153
+
+  ion_source:
+    title: Ion source
+    description: >-
+      The method by which gas phase ions are generated from the sample.
+    comments:
+    required: true
+    examples:
+      - value: matrix-assisted laser desorption ionization
+      - value: microelectrospray
+    range: ion source enum
+    exact_mappings:
+      - MS:1000008
+# Version: 4.1.153
+
+  latitude:
+    title: Latitude
+    description: >-
+      Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface
+      to the equatorial plane.
+    comments: "Use decimal degrees in the format from the following example: -100.345.
+      - signifies °S, + °N, + can be omitted"
+    pattern: "((^[+-]?[0-9]+[.]?[0-9]{0,8}$)|(^not collected$)|(^not provided$))"
+    required: true
+    examples:
+      - value: -100.345
+      - value: 45.34
+      - value: not collected
+      - value: not provided
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - SIO:000319
+# Version: 1.59
+
+  LC_column:
+    title: LC column
+    description: >-
+      The type of chromatographic column that has been used.
+    comments: You can use the commercial name or brand.
+    required: true
+    examples:
+      - value: Bruker PepSep™ MAX HT
+    range: WhitespaceMinimizedString
+
+  lib_layout:
+    title: Library layout
+    description: >-
+      The layout of the library used for sequencing.
+    comments:
+    range: library layout enum
+    required: true
+    examples:
+      - value: single-end
+      - value: paired-end
+
+  lib_selection:
+    title: Library selection
+    description: >-
+      Selection of the targeted genes/gene products.
+    comments: Random if no selection was present.
+    range: library selection enum
+    required: true
+    examples:
+      - value: RANDOM
+      - value: PCR
+
+  lib_source:
+    title: Library source
+    description: >-
+      Specifies the type of material that was the source of the nucleotide sequencing library.
+    comments:
+    required: true
+    range: library source enum
+    examples:
+      - value: genomic
+      - value: metagenomic
+    exact_mappings:
+      - NCIT:C175895
+# Version: 22.07d
+
+  lib_strategy:
+    title: Library strategy
+    description: >-
+      The method used to determine the order of of purines and pyrimidines in a nucleic acid-based
+      sequencing library.
+    comments: 
+    required: true
+    range: library strategy enum
+    exact_mappings:
+      - NCIT:C177618
+# Version: 22.07d
+    examples:
+      - value: WGS
+      - value: Amplicon
+
+  longitude:
+    title: Longitude
+    description: >-
+      Longitude is a geographic position that refers to the angle east or west of
+      a reference meridian between the two geographical poles to another meridian
+      that passes through an arbitrary point.
+    comments: "Use decimal degrees in the format from the following example: -100.345.
+      - signifies °W, + °E, + can be omitted"
+    pattern: "((^[+-]?[0-9]+[.]?[0-9]{0,8}$)|(^not collected$)|(^not provided$))"
+    required: true
+    examples:
+      - value: 102.234
+      - value: -50.33456
+      - value: not collected
+      - value: not provided
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - SIO:000318
+# Version: 1.59
+
+  mass_spectrometry_protocol:
+    title: Mass spectrometry protocol
+    description: >-
+      Description of instrument, ion source, ionisation mode, mz range and settings.
+    comments:
+
+    range: WhitespaceMinimizedString
+    required: true
+    examples:
+      - value: 'The 6550 iFunnel qToF mass spectrometer was operated in both negative and positive scanning mode (50-1700 m/z) with the following source parameters: VCap, 3500 V; nozzle voltage, 2000 V; gas temperature, 275 °C; drying gas 13 L/min; nebulizer, 45 psi; sheath gas temperature 275 °C; sheath gas flow 12 L/min, fragmentor, 365 V. Online mass calibration was performed using a second ionization source and a constant flow (2 mL/min) of reference mass solvent (purine m/z = 121.0509 and hexakis m/z = 922.0098 for positive mode, betaine m/z = 112.9856 and hexakis m/z = 1033.9881 for negative mode). Standard curves for BBN and BCPN were obtained by serial-diluting each compound in water at 2-fold from 10 µM to 4.9 nM.'
+
+  mat_conditions:
+    title: Material conditions
+    description: >-
+      Sample material temperature, RH, salinity, pH.
+    comments: Use semicolon-separation.
+    recommended: true
+    examples:
+      - value: 25.6°C;60%
+    range: WhitespaceMinimizedString
+
+  microbial_id:
+    title: Microbial ID
+    description: >-
+      The name of the species of the examined microorganism.
+    comments: Refer to NCBI Taxonomy https://www.ncbi.nlm.nih.gov/taxonomy if possible. Can be metagenome for data from a mixture of microorganisms.
+    required: true
+    examples:
+      - value: metagenome
+      - value: Mycobacterium tuberculosis
+    range: WhitespaceMinimizedString
+
+  microbial_isolate:
+    title: Microbial isolate
+    description: >-
+      A specific individual microbe and its genetically identical progeny separated on
+      a single occasion from a sample taken from a host or culture system.
+    comments:
+      To determine if the sample is from a microbial isolate.
+    range: microbial isolate enum
+    exact_mappings:
+      - NCIT:C53471
+# Version: 22.07d
+
+  modifications:
+    title: Modifications
+    description: >-
+      The process of covalently altering one or more amino acids in a protein after the protein has been completely translated and released from the ribosome.
+    comments: "Can be multivalued, separation of modifications by ';'."
+    required: true
+    examples:
+      - value: phosphorylated residue;deamidated residue;iodoacetamide derivatized residue
+      - value: iodoacetamide derivatized residue
+      - value: no PTMs were introduced
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - GO:0043687
+# Version: 2024-04-24
+
+  n50:
+    title: N50
+    description: >-
+      The weighted median item size or N50 is a weighted median of the lengths of items,
+      equal to the length of the longest item i such that the sum of the lengths of items
+      greater than or equal in length to i is greater than or equal to half the length of
+      all of the items. With regard to assemblies the items are typically contigs or
+      scaffolds. It therefore denotes the ability of the software to create contigs and
+      provides information about the resulting sequence assembly.
+    comments: The length (in bases) of the shortest contig representing half of the assembly length.
+      Is an integer number.
+    pattern: ^[0-9]{1,}$
+    recommended: true
+    exact_mappings:
+      - OBI:0001940
+# Version: 2023-03-10
+
+  nuc_acid_extr_meth:
+    title: Nucleic acid extraction method
+    description: >-
+      Any procedure used to purify nucleic acids (DNA or RNA) from a biological sample.
+    comments: "Use following format: Producer/Custom: name; description or Producer/Custom: name. Can also be Author: DOI"
+    recommended: true
+    pattern: "(^$|^.{1,}: .{1,}; .{1,}$|^.{1,}: .{1,}$)"
+    examples:
+      - value: "Custom: Phenol-Chloroform Extraction"
+      - value: "Qiagen: DNeasy PowerWater Kit"
+      - value: "Sigma-Aldrich: GenElute(TM) Microbiome DNA Purification Kit"
+      - value: "Djurhuus et al.: https://doi.org/10.3389/fmars.2017.00314"
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - NCIT:C177560
+# Version: 22.07d
+
+  number_contig:
+    title: Number contig
+    description: >-
+      Total number of contigs.
+    comments: "A contig is the following: A contiguous sequence derived from sequence assembly. Has no gaps, but may contain N's from unavailable bases. (http://purl.obolibrary.org/obo/SO_0000149) Is an integer number."
+    recommended: true
+    pattern: "(^$|^[0-9]{1,}$)"
+    examples:
+      - value: 1800000
+      - value: 20000
+
+
+  pcr_primers:
+    title: PCR primer
+    description: >-
+      An oligo to which new deoxyribonucleotides can be added by DNA polymerase.
+    comments: "Use the format: 
+      for: XXX...XXX, rev: XXX...XXX;...;for: XXX...XXX, rev: XXX...XXX
+      Use the IUPAC single letter code."
+    required: true
+    pattern: "((^for: [AGCTRYMKSWHBVDN]{1,}, rev: [AGCTRYMKSWHBVDN]{1,};){1,}for: [AGCTRYMKSWHBVDN]{1,}, rev: [AGCTRYMKSWHBVDN]{1,}$|^for: [AGCTRYMKSWHBVDN]{1,}, rev: [AGCTRYMKSWHBVDN]{1,}$)"
+    examples:
+      - value: "for: NNNNNNNNNNNNN, rev: NNNNNNNNNNN"
+      - value: "for: NNNNNNNNNNNNN, rev: NNNNNNNNNNN;for: NNNNNNNNNNNNN, rev: NNNNNNNNNNN"
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - SO:0000112
+# Version: 2021-11-22
+
+  phenotyp_amr:
+    title: Phenotypical antimicrobial resistance
+    description: >-
+      Qualitative description of a microbial response to antimicrobial agents and the expected clinical outcome. Bacteria may be susceptible or resistant to a broad range of antibiotic drugs or drug classes, with several intermediate states or phases.
+    comments:
+    recommended: true
+    range: phenotyp amr enum
+    exact_mappings:
+      - ARO:3004299
+# last accessed Wed Feb 14 09:50:08 GMT 2024
+
+# TODO detector and analyzer? see https://github.com/HUPO-PSI/MIAPE/blob/main/MIAPE_MS_2.98.pdf
+  post_source_component:
+    title: Post source component
+    description: >-
+      All major components after the ion source; for example, ion traps, collision cells, time-of-flight tubes, detectors (including Fourier Transform Ion Cyclotron Resonance detection). Note that where a collision cell is an ion trap (including FT-ICR cells) or if the instrument has a hybrid architecture, the requirements for the relevant components must be combined.
+    comments: Please refer to https://github.com/HUPO-PSI/MIAPE/blob/main/MIAPE_MS_2.98.pdf, section "Reporting guidelines for mass spectrometry" point 3 for a detailed description (as well as appendix one).
+    required: true
+    range: WhitespaceMinimizedString
+
+  project_description:
+    title: Project description
+    description: >-
+      Project description.
+    comments: A short(!) description of the whole project.
+    required: true
+    examples:
+      - value: B6-CIITA-E cell line (C57Bl/6 fibroblasts expressing MHC-II molecules I-Ab and I-Ed) was infected with Influenza A virus (A/Puerto Rico/8/1934, PR8)
+      - value: left uninfected (control), and the MHC-class II-associated peptidome analysed via immunopeptidomics
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - NCIT:C165054
+# Version: 2024-05-07
+
+  project_title:
+    title: Project title
+    description: >-
+      An official descriptive name of a document, e.g. the long name of a study protocol provided by the study sponsor.
+    comments: 
+    required: true
+    examples:
+      - value: Identification of a cryptic MHC-E epitope from influenza virus
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - NCIT:C42774
+# Version: 2024-05-07
+
+  provenance:
+    title: Provenance
+    description: >-
+      A field containing a DataHarmonizer versioning marker. It is issued by DataHarmonizer when validation is applied to a given row of data.
+    comments: 
+    range: Provenance
+    exact_mappings:
+      - NCIT:C42774
+
+  QBiCCode:
+    title: QBiC Code
+    description: >-
+      A code which is generated automatically at QBiC to store and handle the data.
+    comments: Has to be empty. Is filled by QBiC.
+    pattern: ^$
+    range: WhitespaceMinimizedString
+
+  rrna_treatment:
+    title: rRNA treatment
+    description: >-
+      Describes if and how rRNA is removed from the library or the data.
+    comments:
+    required: true
+    range: rrna treatment enum
+
+  run_ref:
+    title: Run reference
+    description: >-
+      Accession/identifier linking to the raw sequencing data (FASTQ-Format).
+    comments: "If not available use 'not available'; so far only SRA 
+      and ENA are supported. Use the following format: SRA: Accession or ENA: Accession. Use only upper
+      case letters and digits. Use the run level for the accession number."
+    pattern: "(^not available$|^ENA: (E|D|S)RR[0-9]{6,}$|^SRA: (E|D|S)RR[0-9]{6,}$)"
+    examples:
+      - value: not available
+      - value: "ENA: ERR2193251"
+    range: WhitespaceMinimizedString
+
+  sample_collection_protocol:
+    title: Sample collection protocol
+    description: >-
+      Description of sampling procedure, origin of sample, time point of collection, storage, etc.
+    comments:
+
+    range: WhitespaceMinimizedString
+    required: true
+    examples:
+      - value: 'The faecal samples and blood samples were collected from healthy participants for faecal and serum metabolomic anaysis. Each faecal sample was frozen within 30 min of collection. The serum samples were stored and processed immediately after collection.'
+
+  sample_label:
+    title: Sample label
+    description: >-
+      A set of information affixed to the sample container that contains all required information to properly and completely identify the specimen.
+    comments:
+      Base name of the file
+    required: true
+    pattern: "^.{1,}$"
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - NCIT:C115528
+# Version: 22.07d
+
+  sample_material:
+    title: Sample material
+    description: >-
+      The material of a biospecimen from which a sample was obtained.
+    comments:
+      Use either ENVO:00010483 or OBI:0100051 as superterm. 
+    required: true
+    range: sample material enum
+
+  sample_processing_protocol:
+    title: Sample processing protocol
+    description: >-
+      A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.
+    comments: Please include all necessary information how the sample was generated and processed. Also include parameters used in the acquisition of the mass spectra.
+    required: true
+    examples:
+      - value: 200x106 B6-CIITA-Ed cells were either mock infected or PR8-infected in suspension in 0.1% BSA/PBS for 1 hr and incubated at 37 °C, 6% CO2 for ~18 hr. Cells were harvested with PBS containing 2 mM EDTA. Cell lysis and immunoprecipitation of peptide/MHC-II complexes were carried out largely as previously described, and all chemicals used after cell harvest were analytical grade or equivalent when available. Following lysis, all steps were conducted in Protein LoBind tubes from Eppendorf or glass Econo-Columns (Bio-Rad 7371012). Briefly, anti-MHC-II antibody (clone M5/114.5, BioXCell) was cross-linked to Protein G Sepharose beads (GE 17061801). Lysates and beads were co-incubated and rotated overnight at 4 °C. After washing, peptide/MHC-II complexes were eluted in 10% acetic acid, and the collected material was lyophilized. After immunoprecipitation, purified peptide/MHC complexes were dissolved in 120 µl loading buffer (0.1% trifluoroacetic acid (TFA), 1% acetonitrile (ACN) in water). Using an Ultimate 300 HPLC system (Thermo Fisher), samples were loaded onto a 4.6 x 50-mm ProSwift RP-1S (Thermo Fisher) monolith column, and peptides were eluted by applying a 10 min linear gradient from 3% to 30% ACN in 0.1% TFA at a flow rate of 500 nl/min. Fractions were collected in 1-minute intervals. Alternate fractions (odd and even) were combined in two final fractions, dried, resuspended in 20 ul of loading buffer, and analyzed by LC-MS2. Peptides were analyzed by LC-MS2 using an Ultimate 3000 RSLCnano System supplemented with a PepMap C18 column (2 µm particle size, 75 µm × 50 cm, Thermo Fisher) directly interphased with an Orbitrap Fusion™ Lumos™ Tribrid™ Mass Spectrometer (Thermo Fisher). A 60 min linear gradient from 3% to 25% ACN in 5% DMSO/0.1% formic acid at a flow rate of 250 nl/min was applied for peptide elution. Peptide ions were introduced to the mass spectrometer using an Easy-Spray Source at 2000 V. Detection was performed with a resolution of 120,000 for full MS (300-1500 m/z scan range), and precursors were selected using TopSpeed ion selection within a 2 second cycle time, and a quadrupole isolation width of 1.2 amu for fragmentation. For MS2 acquisition, the resolution was set at 30,000 and high-energy collisional dissociation (HCD) energy was set at 28 for peptides with 2 to 4 charges and 32 for peptides that were singly charged.
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - OBI:0000272
+# Version: 2024-01-09
+
+  sample_site_feat:
+    title: Sample site or feature
+    description: >-
+      The site (either anatomical or environmental) from which a biospecimen was obtained.
+      (derived from http://purl.obolibrary.org/obo/NCIT_C171435) 
+    comments:
+      Take the values either from the UBERON Ontology (UBERON:0001062)  or from the ENVO Ontology (ENVO:00000428). Terms in brackets are superterms.
+    range: sample site enum
+    required: true
+
+  sample_size_mass:
+    title: Sample size or mass
+    description: >-
+      The size, volume or mass of the collected sample.
+    comments: H x W x L, volume, mass of sample. Use only one format. Use the format number unit. 
+    required: true
+    pattern: "(^not provided$|^[0-9]{1,} (cm|mm) x [0-9]{1,} (cm|mm) x [0-9]{1,} (cm|mm)$|^[0-9]{1,}[.][0,9]{1,} (cm|mm) x [0-9]{1,}[.][0,9]{1,} (cm|mm) x [0-9]{1,}[.][0,9]{1,} (cm|mm)$|^[0-9]{1,} (L|mL|µL)$|^[0-9]{1,}[.][0,9]{1,} (L|mL|µL)$|^[0-9]{1,} (kg|g|mg)$|^[0-9]{1,}[.][0,9]{1,} (kg|g|mg)$)"
+    examples:
+      - value: not provided
+      - value: 0 cm x 2 cm x 2 cm
+      - value: 25.5 mL
+      - value: 2 mg
+    range: WhitespaceMinimizedString
+
+  sample_sub_site_feat:
+    title: Sample subsite or subfeature
+    description: >-
+      The subsite (either anatomical or environmental) from which a biospecimen was obtained.
+    comments: Take the values either from the UBERON Ontology (UBERON:0001062)  or from the ENVO Ontology (ENVO:00000428). Terms in brackets are superterms. Use terms which are subterms of the one entered at sample site or feature.
+    recommended: true
+    range: sample site enum
+
+  sample_type:
+    title: Sample type
+    description: >-
+      Whether the sample was experimental/blank/control/qc.
+    comments:
+    required: true
+    range: sample type enum
+
+  seq_meth:
+    title: Sequencing method
+    description: >-
+      Sequencing method used.
+    comments:
+    range: seq meth enum
+    required: true
+    examples:
+      - value: MinION
+      - value: Illumina HiSeq
+
+  sex:
+    title: Sex
+    description: >-
+      Sex as determined by phenotypic qualities, namely primary and/or secondary sex characteristics.
+    comments:
+    range: biological sex enum
+    required: true
+    examples:
+      - value: female
+      - value: male
+      - value: other
+    exact_mappings:
+      - GSSO:000105
+# Version: 2.0.5
+
+  site_conditions:
+    title: Site conditions
+    description: >-
+      Environmental temperature, RH, salinity, pH.
+    comments: Use semicolon-separation.
+    recommended: true
+    examples:
+      - value: 25.6°C;60%
+    range: WhitespaceMinimizedString
+
+  smoking_status:
+    title: Smoking status
+    description: >-
+      An indication of a person's current tobacco and nicotine consumption as well as some indication of smoking history.
+    comments:
+    recommended: true
+    range: smoking status enum
+    examples:
+      - value: Non-smoker
+      - value: Ex-smoker
+      - value: Medium-smoker
+    exact_mappings:
+      - NCIT:C19796
+# Version: 22.07d
+
+  state:
+    title: State
+    description: >-
+      A state is a set of governing and supportive institutions that have sovereignty over a definite territory and population.
+    comments:
+      Insert the state the sample was collected in.
+      Only german states are supported to be validated.
+    range: state enum
+    required: true
+    examples:
+      - value: Baden-Württemberg
+      - value: Bavaria
+      - value: Hamburg
+      - value: not collected
+      - value: not provided
+    exact_mappings:
+      - SIO:000662
+# Version: 1.59
+
+  target_gene:
+    title: Target gene
+    description: >-
+      Is a directive information specifying a coding genomic region which is the focus of a planned process such as an assay, for instance in a environmental gene survey.
+    comments:
+    required: true
+    examples:
+      - value: 16S rRNA
+      - value: 18S rRNA
+      - value: ITS
+    range: WhitespaceMinimizedString
+    exact_mappings:
+      - OBI:0001962
+# Version: 2023-03-10
+
+  zbr:
+    title: Zentrales Bioprobenregister
+    description: >-
+      Link to the Zentrales Bioproben Registry of the DZIF.
+    comments:
+    range: WhitespaceMinimizedString
+
+enums:
+  analysis to be performed enum:
+    description: >-
+      The possible analysis to be performed.
+    permissible_values:
+      ampliseq:
+        description: >-
+          16S/ITS
+      mag:
+        description: >-
+          metagenome assembly
+      taxprofiler:
+        description: >-
+          metagenome taxonomy
+      bacass:
+        description: >-
+          genome assembly
+      funcscan:
+        description: >-
+          functional analysis of genomes
+      rnaseq:
+        description: >-
+          transcriptomics
+
+  assembly quality enum:
+    description: >-
+      The quality of an assembly
+    permissible_values:
+      low quality assembly:
+        description: >-
+          Low quality assembly
+      medium quality assembly:
+        description: >-
+          Medium quality assembly
+      high quality assembly:
+        description: >-
+          High quality assembly
+
+  biological sex enum:
+    description: >-
+      The phenotypical sex of the host.
+    permissible_values:
+      female:
+        description: Female
+      male:
+        description: Male
+      not applicable:
+        description: Not applicable.
+      not collected:
+        description: Not collected.
+      not provided:
+        description: Not provided.
+      other:
+        description: Other
+
+  collected by enum:
+    description: >-
+      Names of Institutions taken from https://ror.org/
+    permissible_values:
+#<collected by enum>
+
+  country enum:
+    description: >-
+      Enumeration that lists the countries in which the samples were collected.Only european countries at the moment, more can be added on demand.
+    permissible_values:
+      Albania:
+        description: >-
+
+      Andorra:
+        description: >-
+        
+      Armenia:
+        description: >-
+        
+      Austria:
+        description: >-
+        
+      Azerbaijan:
+        description: >-
+        
+      Belarus:
+        description: >-
+        
+      Belgium:
+        description: >-
+        
+      Bosnia and Herzegovina:
+        description: >-
+        
+      Bulgaria:
+        description: >-
+        
+      Croatia:
+        description: >-
+        
+      Cyprus:
+        description: >-
+        
+      Czech Republic:
+        description: >-
+        
+      Denmark:
+        description: >-
+        
+      Estonia:
+        description: >-
+        
+      Finland:
+        description: >-
+        
+      France:
+        description: >-
+        
+      Georgia:
+        description: >-
+        
+      Germany:
+        description: >-
+        
+      Greece:
+        description: >-
+        
+      Hungary:
+        description: >-
+        
+      Iceland:
+        description: >-
+        
+      Ireland:
+        description: >-
+        
+      Italy:
+        description: >-
+        
+      Kazakhstan:
+        description: >-
+        
+      Kosovo:
+        description: >-
+        
+      Latvia:
+        description: >-
+        
+      Liechtenstein:
+        description: >-
+        
+      Lithuania:
+        description: >-
+        
+      Luxembourg:
+        description: >-
+        
+      Malta:
+        description: >-
+        
+      Moldova:
+        description: >-
+        
+      Monaco:
+        description: >-
+        
+      Montenegro:
+        description: >-
+        
+      Netherlands:
+        description: >-
+        
+      North Macedonia:
+        description: >-
+        
+      Norway:
+        description: >-
+        
+      Poland:
+        description: >-
+        
+      Portugal:
+        description: >-
+        
+      Romania:
+        description: >-
+        
+      Russia:
+        description: >-
+        
+      San Marino:
+        description: >-
+        
+      Serbia:
+        description: >-
+        
+      Slovakia:
+        description: >-
+        
+      Slovenia:
+        description: >-
+        
+      Spain:
+        description: >-
+        
+      Sweden:
+        description: >-
+        
+      Switzerland:
+        description: >-
+        
+      Turkey:
+        description: >-
+        
+      Ukraine:
+        description: >-
+        
+      United Kingdom:
+        description: >-
+        
+      Vatican City:
+        description: >-
+        
+  digestion method enum:
+    permissible_values:
+      in gel:
+        description: >-
+
+      in solution:
+        description: >-
+        
+      iST proteomics kit:
+        description: >-
+        
+      on beads:
+        description: >-
+        
+
+  disorder enum:
+    permissible_values:
+      not applicable:
+        description: Not applicable.
+      not collected:
+        description: Not collected.
+      not provided:
+        description: Not provided.
+#<disorder enum>
+
+  ethnicity enum:
+    description: >-
+      The ethnicity of a host.
+    permissible_values:
+      african:
+        description: >-
+          Someone with ancestors from Africa.
+      asian:
+        description: >-
+          Someone with ancestors from Asia.
+      caucasian:
+        description: >-
+          Someone with ancestors from Europe and bordering regions.
+      hispanic:
+        description: >-
+          Someone with ancestors from South America.
+      other:
+        description: >-
+          Someone with another ancestry than the given ones.
+      unknown:
+        description: >-
+          Someone of unknown ancestry.
+
+  host diet enum:
+    description: >-
+      The diet of a host. Only high level terms.
+    permissible_values:
+      omnivorous:
+        description: >-
+          The host consumes animal and plant parts.
+      vegetarian:
+        description: >-
+          The host only consumes plant parts and products of animals obtained without killing the animal.
+      lacto-vegetarian: 
+        description: >-
+          Consumes dairy but not eggs or meat.
+      ovo-vegetarian: 
+        description: >-
+          Consumes eggs but not dairy or meat.
+      ovo-lacto-vegetarian:
+        description: >-
+          The host only consumes plant parts, eggs and milk.
+      vegan:
+        description: >-
+          The host consumes only plant parts.
+      pescatarian: 
+        description: >-
+          Excludes meat but includes fish and sometimes other seafood.
+      flexitarian: 
+        description: >-
+          Primarily vegetarian but occasionally eats meat or fish.
+      paleo: 
+        description: >-
+          Focuses on foods presumed to have been available to paleolithic humans, emphasizing meat, fish, nuts, fruits, and vegetables and avoiding dairy, grains, and processed foods.
+      ketogenic: 
+        description: >-
+          High fat, moderate protein, very low carbohydrate diet that aims to force the body into a state of ketosis.
+      atkins: 
+        description: >-
+          Low-carbohydrate diet, focusing on proteins and fats.
+      mediterranean: 
+        description: >-
+          Emphasizes fruits, vegetables, whole grains, olive oil, fish, and moderate wine consumption.
+      intermittent fasting: 
+        description: >-
+          Involves cycling between periods of eating and fasting.
+      raw food: 
+        description: >-
+          Based on consuming unprocessed and mostly or completely raw foods.
+      gluten-free: 
+        description: >-
+          Excludes foods containing gluten.
+      not applicable:
+        description: >-
+          not applicable
+      not collected:
+        description: >-
+          not collected
+      not provided:
+        description: >-
+          not provided
+
+  host name enum:
+    # https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7150119/
+    # + Homo sapiens
+    description: >-
+      The scientific name of the host of the microbes.
+    permissible_values:
+      'Homo sapiens [NCBITaxon:9606]':
+        description: >-
+          Homo sapiens
+      'Mus musculus [NCBITaxon:10090]':
+        description: >-
+          Mus musculus
+      'Rattus norvegicus [NCBITaxon:10116]':
+        description: >-
+          Rattus norvegicus
+      'Oryctolagus cuniculus [NCBITaxon:9986]':
+        description: >-
+          Oryctolagus cuniculus
+      'Cavia porcellus [NCBITaxon:10141]':
+        description: >-
+          Cavia porcellus
+      'Mesocricetus auratus [NCBITaxon:10036]':
+        description: >-
+          Mesocricetus auratus
+      'Chinchilla lanigera [NCBITaxon:34839]':
+        description: >-
+          Chinchilla lanigera
+      'Chinchilla chinchilla [NCBITaxon:10152]':
+        description: >-
+          Chinchilla chinchilla
+      'Meriones unguiculatus [NCBITaxon:10047]':
+        description: >-
+          Meriones unguiculatus
+      'Dasypus novemcinctus [NCBITaxon:9361]':
+        description: >-
+          Dasypus novemcinctus
+      'Danio rerio [NCBITaxon:7955]':
+        description: >-
+          Danio rerio
+      'Xenopus laevis [NCBITaxon:8355]':
+        description: >-
+          Xenopus laevis
+      'Xenopus tropicalis [NCBITaxon:8364]':
+        description: >-
+          Xenopus tropicalis
+      'Aquarana catesbeiana [NCBITaxon:8400]':
+        description: >-
+          Aquarana catesbeiana
+      'Ambystoma mexicanum [NCBITaxon:8296]':
+        description: >-
+          Ambystoma mexicanum
+
+  instrument enum:
+    description: >-
+      The model of the instrument/mass spectrometer.
+    permissible_values:
+#<instrument enum>
+
+  ion source enum:
+    description: >-
+      The method how the ions are generated by the instrument.
+    permissible_values:
+#<ion source enum>
+
+  library layout enum:
+    description: >-
+      The layout of the library used for sequencing.
+    permissible_values:
+      single-end:
+        description: >-
+          Single-end library layout.
+      paired-end:
+        description: >-
+          Paired-end library layout.
+
+  library selection enum:
+    description: >-
+      How the library was selected.
+    permissible_values:
+      RANDOM:
+        description: >-
+          No special selection method was used on the library.
+      PCR:
+        description: >-
+          The library was selected by using PCR.
+
+  library source enum:
+    description: >-
+      The source of the library.
+    permissible_values:
+      genomic:
+        description: >-
+          The library originates from a single organism and DNA.
+      metagenomic:
+        description: >-
+          The library originates from a community of organisms and DNA.
+      transcriptomic:
+        description: >-
+          The library originates from a single organism and RNA.
+      metatranscriptomic:
+        description: >-
+          The library originates from a community of organisms and RNA.
+
+  library strategy enum:
+    description: >-
+      Describes the strategy for the library.
+    permissible_values:
+      WGS:
+        description: >-
+          Whole Genome Sequencing
+      Amplicon:
+        description: >-
+          The library was amplified with specific primers.
+      WTS:
+        description: >-
+          Whole Transcriptome Sequencing
+
+  microbial isolate enum:
+    description: >-
+      The layout of the library used for sequencing. Restricted text.
+    permissible_values:
+      Yes:
+        description: >-
+          Use if the sample is from a microbial isolate.
+      No:
+        description: >-
+          Use if the sample is not from a microbial isolate.
+
+  null value date enum:
+    permissible_values:
+      missing:
+        text: missing
+        meaning: GENEPIO:0001618
+        # Version: 2023-08-19
+      not collected:
+        text: not collected
+        meaning: GENEPIO:0001620
+        # Version: 2023-08-19
+      not provided:
+        text: not provided
+        meaning: GENEPIO:0001668
+        # Version: 2023-08-19
+
+  phenotyp amr enum:
+    description: >-
+      Phenotypical antimicrobial resistance? Yes or No
+    permissible_values:
+      Yes:
+        description: >-
+          Phenotypical antimicrobial resistance observable.
+      No:
+        description: >-
+          Phenotypical antimicrobial resistance not observable.
+      not applicable:
+        description: >-
+          If sample did not originate from host and/or no antimicrobial agent was applied.
+      not provided:
+        description: >-
+          If the information about phenotypical antimicrobial resistance was not provided. 
+
+  rrna treatment enum:
+    description: >-
+      
+    permissible_values:
+      Depletion (Pre-seq, molecular):
+        description: >-
+          Depletion of rRNA on the molecular level.
+      Removal (Post-seq, data):
+        description: >-
+          Removal of Reads of rRNA on the data level.
+      None:
+        description: >-
+          No removal/depletion of rRNA reads.
+
+  sample type enum:
+    description: >-
+
+    permissible_values:
+      experimental:
+        description: >-
+
+      blank:
+        description: >-
+
+      control:
+        description: >-
+
+      qc:
+        description: >-
+
+  seq meth enum:
+# https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#instrument
+    description: >-
+      The method used for sequencing.
+    permissible_values:
+      454 GS:
+        description: >-
+
+      454 GS 20:
+        description: >-
+
+      454 GS FLX:
+        description: >-
+
+      454 GS FLX+:
+        description: >-
+
+      454 GS FLX Titanium:
+        description: >-
+
+      454 GS Junior:
+        description: >-
+
+      HiSeq X Five:
+        description: >-
+
+      HiSeq X Ten:
+        description: >-
+
+      Illumina Genome Analyzer:
+        description: >-
+
+      Illumina Genome Analyzer II:
+        description: >-
+
+      Illumina Genome Analyzer IIx:
+        description: >-
+
+      Illumina HiScanSQ:
+        description: >-
+
+      Illumina HiSeq 1000:
+        description: >-
+
+      Illumina HiSeq 1500:
+        description: >-
+
+      Illumina HiSeq 2000:
+        description: >-
+
+      Illumina HiSeq 2500:
+        description: >-
+
+      Illumina HiSeq 3000:
+        description: >-
+
+      Illumina HiSeq 4000:
+        description: >-
+
+      Illumina iSeq 100:
+        description: >-
+
+      Illumina NovaSeq 6000:
+        description: >-
+
+      Illumina MiniSeq:
+        description: >-
+
+      Illumina MiSeq:
+        description: >-
+
+      NextSeq 500:
+        description: >-
+
+      NextSeq 550:
+        description: >-
+
+      Helicos HeliScope:
+        description: >-
+
+      AB 5500 Genetic Analyzer:
+        description: >-
+
+      AB 5500xl Genetic Analyzer:
+        description: >-
+
+      AB 5500x-Wl Genetic Analyzer:
+        description: >-
+
+      AB SOLiD 3 Plus System:
+        description: >-
+
+      AB SOLiD 4 System:
+        description: >-
+
+      AB SOLiD 4hq System:
+        description: >-
+
+      AB SOLiD PI System:
+        description: >-
+
+      AB SOLiD System:
+        description: >-
+
+      AB SOLiD System 2.0:
+        description: >-
+
+      AB SOLiD System 3.0:
+        description: >-
+
+      Complete Genomics:
+        description: >-
+
+      PacBio RS:
+        description: >-
+
+      PacBio RS II:
+        description: >-
+
+      PacBio Sequel:
+        description: >-
+
+      PacBio Sequel II:
+        description: >-
+
+      Ion Torrent PGM:
+        description: >-
+
+      Ion Torrent Proton:
+        description: >-
+
+      Ion Torrent S5 XL:
+        description: >-
+
+      Ion Torrent S5:
+        description: >-
+
+      AB 310 Genetic Analyzer:
+        description: >-
+
+      AB 3130 Genetic Analyzer:
+        description: >-
+
+      AB 3130xL Genetic Analyzer:
+        description: >-
+
+      AB 3500 Genetic Analyzer:
+        description: >-
+
+      AB 3500xL Genetic Analyzer:
+        description: >-
+
+      AB 3730 Genetic Analyzer:
+        description: >-
+
+      AB 3730xL Genetic Analyzer:
+        description: >-
+
+      GridION:
+        description: >-
+
+      MinION:
+        description: >-
+
+      PromethION:
+        description: >-
+
+      BGISEQ-500:
+        description: >-
+
+      DNBSEQ-G400:
+        description: >-
+
+      DNBSEQ-T7:
+        description: >-
+
+      DNBSEQ-G50:
+        description: >-
+
+  sample material enum:
+    permissible_values:
+#<sample material enum obi>
+#<sample material enum envo>
+
+  sample site enum:
+    permissible_values:
+#<sample site enum uberon>
+#<sample site enum envo>
+
+  smoking status enum:
+    description: >-
+      The smoking status of a host
+    permissible_values:
+      Non-smoker:
+        description: >-
+          Never smoked on a regular base
+      Ex-smoker:
+        description: >-
+          Stopped smoking on a regular base
+      Passive-smoker:
+        description: >-
+          Does not smoke but is often in a smoking environment
+      Light-smoker:
+        description: >-
+          Smokes on a regular base, between 1-15 times a week
+      Medium-smoker:
+        description: >-
+          Smokes on a regular base, between 16-30 times a week
+      Heavy-smoker:
+        description: >-
+          Smokes on a regular base, more than 30 times a week
+
+  state enum:
+    description:
+      German states
+    permissible_values:
+      not collected:
+        description: >-
+
+      not provided:
+        description: >-
+        
+      Baden-Württemberg:
+        description: >-
+
+      Bavaria:
+        description: >-
+        
+      Berlin:
+        description: >-
+        
+      Brandenburg:
+        description: >-
+        
+      Bremen:
+        description: >-
+        
+      Hamburg:
+        description: >-
+        
+      Hesse:
+        description: >-
+        
+      Mecklenburg-Vorpommern:
+        description: >-
+        
+      Lower Saxony:
+        description: >-
+        
+      North Rhine-Westphalia:
+        description: >-
+        
+      Rhineland-Palatinate:
+        description: >-
+        
+      Saarland:
+        description: >-
+        
+      Saxony:
+        description: >-
+        
+      Saxony-Anhalt:
+        description: >-
+        
+      Schleswig-Holstein:
+        description: >-
+        
+      Thuringia:
+        description: >-
+        
+
+types:
+  WhitespaceMinimizedString:
+    name: 'WhitespaceMinimizedString'
+    typeof: string
+    description: 'A string that has all whitespace trimmed off of beginning and end, and all internal whitespace segments reduced to single spaces. Whitespace includes #x9 (tab), #xA (linefeed), and #xD (carriage return).'
+    base: str
+    uri: xsd:token
+  Provenance:
+    name: 'Provenance'
+    typeof: string
+    description: 'A field containing a DataHarmonizer versioning marker. It is issued by DataHarmonizer when validation is applied to a given row of data.'
+    base: str
+    uri: xsd:token
+settings:
+  Title_Case: "(((?<=\\b)[^a-z\\W]\\w*?|[\\W])+)"
+  UPPER_CASE: "[A-Z\\W\\d_]*"
+  lower_case: "[a-z\\W\\d_]*"
