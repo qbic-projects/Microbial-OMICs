@@ -22,4 +22,4 @@ The built DZIF DataHarmonizer will be located in the folder `DZIFDataHarmonizer`
 The used ontologies can be updated to a newer version by editing the `config/config.yaml` file. To start with this, first locate the newest version of the specific ontology using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols4/) (for updating the [ROR](https://ror.org/) file for organizations in the `collected by` field go to the respective [zenodo](https://zenodo.org/doi/10.5281/zenodo.6347574) repository) and then insert this information into the `config.yaml` and push it to the github repository master branch. This should be accompanied by also making a new release of the DZIF DataHarmonizer with an updated version number using [semantic versioning](https://semver.org/). The version of the metadata scheme has to be updated in the `metaDZIF.yaml` file (changing the `version: 1.0.0` to `version: 1.1.0`, for example) located in the `schemes` folder.
 
 # Funding
-This work was funded by the German Center for Infection Research.
+This work was funded by the GGerman Center for Infection Research (DZIF).
